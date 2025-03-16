@@ -49,16 +49,23 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+scale = Vector2(1.00119, 0.99613)
+size_flags_horizontal = 3
+size_flags_vertical = 3
 texture = ExtResource("1_v4lbx")
-expand_mode = 3
 stretch_mode = 3
+metadata/_edit_use_anchors_ = true
 
 [node name="ColorRect" type="ColorRect" parent="."]
+visible = false
 modulate = Color(0, 0, 0, 1)
-offset_left = 2.0
-offset_top = 4.0
-offset_right = 1150.0
-offset_bottom = 647.0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
 color = Color(0, 0, 0, 1)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
