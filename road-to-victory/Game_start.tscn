@@ -1,7 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://cgiqmp0sc0wqt"]
+[gd_scene load_steps=8 format=3 uid="uid://cgiqmp0sc0wqt"]
 
 [ext_resource type="Texture2D" uid="uid://c7k5po60trj0h" path="res://Backgrounds/istockphoto-1415886887-612x612.jpg" id="1_v4lbx"]
 [ext_resource type="Script" path="res://First_map_start.gd" id="1_vnvi4"]
+[ext_resource type="Texture2D" uid="uid://cvotxrnk01n17" path="res://Characters/Aki_neutral.png" id="4_8xfhb"]
+[ext_resource type="Texture2D" uid="uid://bq5ysje77ck57" path="res://Characters/Sunny_Neutral.png" id="4_xvci1"]
 
 [sub_resource type="Animation" id="Animation_x7w64"]
 resource_name = "Fade_out_in"
@@ -73,3 +75,14 @@ root_node = NodePath("../ColorRect")
 libraries = {
 "": SubResource("AnimationLibrary_85g4w")
 }
+
+[node name="AkiNeutral" type="Sprite2D" parent="."]
+position = Vector2(750, 383)
+scale = Vector2(0.217718, 0.238769)
+texture = ExtResource("4_8xfhb")
+flip_h = true
+
+[node name="SunnyNeutral" type="Sprite2D" parent="."]
+position = Vector2(406, 387)
+scale = Vector2(0.215476, 0.215476)
+texture = ExtResource("4_xvci1")

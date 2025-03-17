@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cvotxrnk01n17"
-path="res://.godot/imported/Background(84).png-32965514f3efec965082d0bb26d7e2e7.ctex"
+path="res://.godot/imported/Aki_neutral.png-b21070d54f77e5b0d28dfaa5c6c50cd3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Characters/Background(84).png"
-dest_files=["res://.godot/imported/Background(84).png-32965514f3efec965082d0bb26d7e2e7.ctex"]
+source_file="res://Characters/Aki_neutral.png"
+dest_files=["res://.godot/imported/Aki_neutral.png-b21070d54f77e5b0d28dfaa5c6c50cd3.ctex"]
 
 [params]
 
