@@ -1,0 +1,37 @@
+{
+  "First_chat":[
+    {
+      "Character":
+      [
+        "Sunny",
+        "Neutral"
+      ],
+      "text":
+      "Finally!",
+      "Hey Aki!"
+    },
+    {
+      "Character":
+      [
+        "Aki",
+        "Neutral"
+      ],
+      "text": "Hey Sunny"
+    },
+    {
+      "Character":
+      [
+        "Sunny",
+        "Neutral"
+      ],
+      "text": "Nice to see you here testing the dialogue."
+    },
+    {
+      "Character":
+      [
+        "Aki",
+        "Neutral"
+      ],
+      "text": "Indeed."
+    }
+}
