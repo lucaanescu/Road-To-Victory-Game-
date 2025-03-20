@@ -23,9 +23,13 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 [dialogic]
 
 directories/dch_directory={
+"Aki": "res://Characters/Aki.dch",
 "Sunny": "res://Characters/Sunny.dch"
 }
-directories/dtl_directory={}
+directories/dtl_directory={
+"Opening Scene": "res://Opening Scene.dtl"
+}
+glossary/default_case_sensitive=true
 
 [display]
 
