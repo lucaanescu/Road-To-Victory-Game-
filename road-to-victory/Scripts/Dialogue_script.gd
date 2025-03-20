@@ -10,13 +10,12 @@ var in_progress = false
 var json = JSON.new()
 
 @onready var background = self
-@onready var text_label = $MarginContainer/MarginContainer/HBoxContainer/Dialogue
+@onready var text_box = $Panel/Container/TextEdit
 
 func _ready():
-	$AnimationPlayer.play("RESET")
 	background.visible = false
 	scene_text = load_scene_text()
-	#Text.connect("display_dialog", on_display_dialog)
+	#Text.connect("Dialogue_box", on_display_dialog)
 	
 func load_scene_text():
 	if FileAccess.file_exists(scene_text_file):
@@ -26,7 +25,7 @@ func load_scene_text():
 		return json.data
 		
 func show_text():
-	text_label.text = selected_text.pop_front()
+	text_box.text = selected_text.pop_front()
 	
 		
 func next_line():
@@ -37,7 +36,7 @@ func next_line():
 
 func finish():
 	$AnimationPlayer.play_backwards("Fade")
-	text_label.text = ""
+	text_box.text = ""
 	background.visible = false
 	in_progress = false
 	get_tree().paused = false

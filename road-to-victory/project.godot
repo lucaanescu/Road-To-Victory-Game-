@@ -15,8 +15,16 @@ run/main_scene="res://Game_start.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+DialogueBox="*res://Dialogue Box.tscn"
+
 [display]
 
 window/stretch/mode="canvas_items"
 window/stretch/scale=2.0
 window/vsync/vsync_mode=0
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/dialogue_box/plugin.cfg")

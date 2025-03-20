@@ -1,6 +1,9 @@
-[gd_scene format=3 uid="uid://dxkyvoemarn68"]
+[gd_scene load_steps=2 format=3 uid="uid://dxkyvoemarn68"]
+
+[ext_resource type="Script" path="res://Scripts/Dialogue_script.gd" id="1_87w84"]
 
 [node name="Node2D" type="CanvasLayer"]
+script = ExtResource("1_87w84")
 
 [node name="Panel" type="Panel" parent="."]
 anchors_preset = 7
@@ -16,11 +19,18 @@ grow_vertical = 0
 size_flags_horizontal = 3
 size_flags_vertical = 10
 
-[node name="Container" type="Container" parent="Panel"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-
-[node name="TextEdit" type="TextEdit" parent="Panel/Container"]
+[node name="Dialogue" type="TextEdit" parent="Panel"]
 layout_mode = 2
+offset_right = 140.0
+offset_bottom = 40.0
+text = "Placeholder Text"
+
+[node name="Person Speaking" type="Container" parent="Panel"]
+layout_mode = 0
+offset_top = -41.0
+offset_right = 148.0
+offset_bottom = -1.0
+
+[node name="Dialogue" type="TextEdit" parent="Panel/Person Speaking"]
+layout_mode = 2
+text = "Person Speaking"
