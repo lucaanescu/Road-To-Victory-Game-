@@ -6,4 +6,3 @@ extends CanvasLayer
 func _ready():
 	color_Rect.visible = true
 	animated_fadein.play("Fade_out_in")
-	#Text.connect("Dialogue_box", on_display_dialog)
