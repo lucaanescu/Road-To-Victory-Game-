@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cvotxrnk01n17"
-path="res://.godot/imported/Aki_neutral.png-b21070d54f77e5b0d28dfaa5c6c50cd3.ctex"
+uid="uid://d2ovg3lo8npx1"
+path="res://.godot/imported/Jonas_Standard.png-56e6c297d5bec73d026ac1c6eb922ba2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Characters/Aki_neutral.png"
-dest_files=["res://.godot/imported/Aki_neutral.png-b21070d54f77e5b0d28dfaa5c6c50cd3.ctex"]
+source_file="res://Characters/Jonas_Standard.png"
+dest_files=["res://.godot/imported/Jonas_Standard.png-56e6c297d5bec73d026ac1c6eb922ba2.ctex"]
 
 [params]
 

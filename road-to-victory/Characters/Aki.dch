@@ -12,14 +12,14 @@
 },
 "default_portrait": "Aki_default",
 "description": "",
-"display_name": "Aki",
+"display_name": "Yuki",
 "mirror": false,
 "nicknames": [""],
 "offset": Vector2(0, 0),
 "portraits": {
 "Aki_default": {
 "export_overrides": {
-"image": "\"res://Characters/Aki_neutral.png\""
+"image": "\"res://Characters/Yuki_2x.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),
