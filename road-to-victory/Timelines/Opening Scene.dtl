@@ -1,0 +1,16 @@
+join Sunny (Sunny_default) left [animation="Fade In"]
+Sunny (Sunny_default): Ah finally! I can say some words!
+[wait_input]
+Sunny (Sunny_default): Oh hello Yuki!
+[wait_input]
+join Aki right [animation="Fade In" length="3.0"]
+Aki: Hey Sunny
+[wait_input]
+Sunny (Sunny_default): Isn't it awsome that we can talk now!
+[wait_input]
+- Yeah!
+	Sunny (Sunny_default): Right!
+- Nah
+	leave Aki
+	join Sunny (Sunny_default) left
+	Sunny (Sunny_default): Looks like Yuki left

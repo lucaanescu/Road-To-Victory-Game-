@@ -1,5 +1,0 @@
-join Sunny (Sunny_default) left [animation="Fade In"]
-Sunny (Sunny_default): Ah finally! I can say some words!
-Sunny (Sunny_default): Oh hello Aki!
-join Aki right [animation="Fade In"]
-Aki: Hey Sunny
