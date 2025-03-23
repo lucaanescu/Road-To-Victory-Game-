@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="DialogicStyle" load_steps=22 format=3 uid="uid://bdvlgmyfpaxbs"]
+[gd_resource type="Resource" script_class="DialogicStyle" load_steps=21 format=3 uid="uid://bdvlgmyfpaxbs"]
 
 [ext_resource type="PackedScene" uid="uid://cqpb3ie51rwl5" path="res://addons/dialogic/Modules/DefaultLayoutParts/Base_Default/default_layout_base.tscn" id="1_6abq6"]
 [ext_resource type="Script" path="res://addons/dialogic/Resources/dialogic_style_layer.gd" id="2_4r4vc"]
@@ -35,7 +35,19 @@ overrides = {}
 [sub_resource type="Resource" id="Resource_piu4i"]
 script = ExtResource("2_4r4vc")
 scene = ExtResource("6_r2t7b")
-overrides = {}
+overrides = {
+"box_color_custom": "Color(0, 0, 0, 0.705882)",
+"box_color_use_global": "false",
+"box_size": "Vector2(350, 100)",
+"name_label_box_modulate": "Color(0, 0, 0, 0.705882)",
+"name_label_box_use_global_color": "false",
+"name_label_custom_font_size": "10.0",
+"name_label_use_global_color": "false",
+"name_label_use_global_font_size": "false",
+"next_indicator_size": "Vector2(15, 15)",
+"text_size": "10.0",
+"text_use_global_size": "false"
+}
 
 [sub_resource type="Resource" id="Resource_jjgg3"]
 script = ExtResource("2_4r4vc")
@@ -57,15 +69,10 @@ script = ExtResource("2_4r4vc")
 scene = ExtResource("10_4etxq")
 overrides = {}
 
-[sub_resource type="Resource" id="Resource_rc822"]
-script = ExtResource("2_4r4vc")
-scene = ExtResource("6_r2t7b")
-overrides = {}
-
 [resource]
 script = ExtResource("11_u11vj")
 name = "Regular Dialogue"
-layer_list = Array[String](["10", "11", "12", "13", "14", "15", "16", "17", "18"])
+layer_list = Array[String](["10", "11", "12", "13", "14", "15", "16", "17"])
 layer_info = {
 "": SubResource("Resource_n3sog"),
 "10": SubResource("Resource_0wpgw"),
@@ -75,9 +82,8 @@ layer_info = {
 "14": SubResource("Resource_jjgg3"),
 "15": SubResource("Resource_kgpay"),
 "16": SubResource("Resource_cgg1k"),
-"17": SubResource("Resource_ymgqd"),
-"18": SubResource("Resource_rc822")
+"17": SubResource("Resource_ymgqd")
 }
 base_overrides = {}
 layers = Array[ExtResource("2_4r4vc")]([])
-metadata/_latest_layer = "18"
+metadata/_latest_layer = "13"

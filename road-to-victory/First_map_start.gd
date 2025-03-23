@@ -12,6 +12,6 @@ func _ready():
 	await get_tree().create_timer(4.2).timeout
 	
 	#Starts the first dialogue of the game
-	var new_dialog_0 = Dialogic.start('Opening Scene', false)
+	var new_dialog_0 = Dialogic.start('Opening_Scene_Real', false)
 	add_child(new_dialog_0)
 	

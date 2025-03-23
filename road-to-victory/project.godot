@@ -24,6 +24,7 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 
 directories/dch_directory={
 "Aki": "res://Characters/Aki.dch",
+"Mystery": "res://Characters/Mystery.dch",
 "Sunny": "res://Characters/Sunny.dch"
 }
 directories/dtl_directory={
@@ -34,9 +35,9 @@ glossary/default_case_sensitive=true
 layout/style_list=["res://Characters/Regular Dialogue.tres"]
 layout/default_style="res://Characters/Regular Dialogue.tres"
 extensions_folder="res://addons/dialogic_additions"
-text/letter_speed=0.01
+text/letter_speed=0.05
 text/initial_text_reveal_skippable=true
-text/text_reveal_skip_delay=0.1
+text/text_reveal_skip_delay=1.0
 text/advance_delay=0.1
 text/autoadvance_per_character_delay=0.1
 text/autoadvance_ignored_characters_enabled=true
@@ -67,9 +68,15 @@ audio/channel_defaults={
 }
 }
 variables={
-"Nah": "",
-"Yeah!": ""
+"Charm": "",
+"Endurance": "",
+"Flexibility": "",
+"Might": "",
+"Money": "",
+"Spirit": ""
 }
+text/autocolor_names=false
+history/simple_history_enabled=true
 
 [display]
 
