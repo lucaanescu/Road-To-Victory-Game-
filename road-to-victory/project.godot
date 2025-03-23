@@ -27,7 +27,8 @@ directories/dch_directory={
 "Sunny": "res://Characters/Sunny.dch"
 }
 directories/dtl_directory={
-"Opening Scene": "res://Timelines/Opening Scene.dtl"
+"Opening Scene": "res://Timelines/Opening Scene.dtl",
+"Opening_Scene_Real": "res://Characters/Opening_Scene_Real.dtl"
 }
 glossary/default_case_sensitive=true
 layout/style_list=["res://Characters/Regular Dialogue.tres"]
