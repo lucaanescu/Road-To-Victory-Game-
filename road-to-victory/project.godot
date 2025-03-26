@@ -25,6 +25,7 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 directories/dch_directory={
 "Aki": "res://Characters/Aki.dch",
 "Mystery": "res://Characters/Mystery.dch",
+"Narator": "res://Characters/Narator.dch",
 "Sunny": "res://Characters/Sunny.dch"
 }
 directories/dtl_directory={
@@ -68,12 +69,13 @@ audio/channel_defaults={
 }
 }
 variables={
-"Charm": "",
-"Endurance": "",
-"Flexibility": "",
-"Might": "",
-"Money": "",
-"Spirit": ""
+"Charm": 0.0,
+"Endurance": 0.0,
+"Flexibility": 0.0,
+"Might": 0.0,
+"Mind": 0.0,
+"Money": 0.0,
+"Spirit": 0.0
 }
 text/autocolor_names=false
 history/simple_history_enabled=true

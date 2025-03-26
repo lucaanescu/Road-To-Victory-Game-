@@ -1,2 +1,52 @@
 Mystery: At long last-
 Mystery: My application is almost ready!!
+Mystery: I just need to fill out this questionnaire...
+Narator: As part of the Questionaire, you are asked a series of dumb questions about your past and maiden name to best alocate your fighter statistics
+Narator: As a kid you always loved to\:
+- Rough house
+	set {Might} += 3
+- Hang off the monkey bars
+	set {Flexibility} += 3
+- Read books
+	set {Mind} += 3
+- Stargaze
+	set {Spirit} += 3
+Narator: If you had a week off school or work, Where would you Vacation?
+- The Caribbean
+	set {Charm} += 3
+- Itally
+	set {Might} += 3
+- Japan
+	set {Spirit} += 3
+- New York
+	set {Flexibility} += 3
+Narator: What is your favorite exercise\:
+- Pushups
+	set {Might} += 3
+- Squats
+	set {Flexibility} += 3
+- Planks
+	set {Endurance} += 3
+- Warrior Pose
+	set {Spirit} += 3
+Narator: How many attempts do you try a claw machine before you give up on the prize?
+- 1 Attempt
+	set {Money} += 10
+- 3 Attempts
+	set {Money} += 7
+	set {Endurance} += 3
+- 5 Attempts!
+	set {Money} += 5
+	set {Endurance} += 3
+	set {Mind} += 3
+- UNLIMITED ATEMPTS!!!
+	set {Money} += 3
+	set {Endurance} += 3
+	set {Mind} += 3
+	set {Charm} += 3
+set 
+join Aki center
+Aki: Hey, how long are you planing on keeping us waiting?
+update Aki right
+join Sunny (Sunny_default) left
+Sunny (Sunny_default): Oh sorry Yuki, got kind of lost in the application process.
