@@ -43,7 +43,6 @@ Narator: How many attempts do you try a claw machine before you give up on the p
 	set {Money} += 3
 	set {Endurance} += 3
 	set {Mind} += 3
-	set {Charm} += 3
 set 
 join Aki center
 Aki: Hey, how long are you planing on keeping us waiting?

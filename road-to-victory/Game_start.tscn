@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://cgiqmp0sc0wqt"]
+[gd_scene load_steps=7 format=3 uid="uid://cgiqmp0sc0wqt"]
 
 [ext_resource type="Texture2D" uid="uid://c7k5po60trj0h" path="res://Backgrounds/istockphoto-1415886887-612x612.jpg" id="1_v4lbx"]
 [ext_resource type="Script" path="res://First_map_start.gd" id="1_vnvi4"]
+[ext_resource type="PackedScene" uid="uid://dkfkmyyegalju" path="res://Stats_block_Menu.tscn" id="3_r2uyi"]
 
 [sub_resource type="Animation" id="Animation_x7w64"]
 resource_name = "Fade_out_in"
@@ -75,3 +76,5 @@ root_node = NodePath("../ColorRect")
 libraries = {
 "": SubResource("AnimationLibrary_85g4w")
 }
+
+[node name="Stats" parent="." instance=ExtResource("3_r2uyi")]
