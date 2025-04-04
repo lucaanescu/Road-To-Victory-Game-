@@ -78,3 +78,4 @@ libraries = {
 }
 
 [node name="Stats" parent="." instance=ExtResource("3_r2uyi")]
+layer = 2

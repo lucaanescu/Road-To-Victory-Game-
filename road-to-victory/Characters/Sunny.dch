@@ -17,22 +17,59 @@
 "nicknames": [""],
 "offset": Vector2(0, 0),
 "portraits": {
-"New portrait": {
+"Sunny_Confused": {
 "export_overrides": {
-"image": ""
+"image": "\"res://Characters/Sunny/Sunny_Confused_Standard.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),
-"scale": 1,
+"scale": 0.8,
+"scene": ""
+},
+"Sunny_Happy": {
+"export_overrides": {
+"image": "\"res://Characters/Sunny/Sunny_Happy_Standard.png\""
+},
+"ignore_char_scale": false,
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.8,
+"scene": ""
+},
+"Sunny_Mad": {
+"export_overrides": {
+"image": "\"res://Characters/Sunny/Sunny_mad_Standard.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.8,
+"scene": ""
+},
+"Sunny_Sad": {
+"export_overrides": {
+"image": "\"res://Characters/Sunny/Sunny_sad_standard.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.8,
+"scene": ""
+},
+"Sunny_Surprised": {
+"export_overrides": {
+"image": "\"res://Characters/Sunny/Sunny_Surprised_Standard.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.8,
 "scene": ""
 },
 "Sunny_default": {
 "export_overrides": {
-"image": "\"res://Characters/Sunny_Neutral.png\""
+"image": "\"res://Characters/Sunny/Sunny_2x-1.png\""
 },
 "mirror": false,
-"offset": Vector2(-15, 0),
-"scale": 0.9,
+"offset": Vector2(0, 0),
+"scale": 0.8,
 "scene": ""
 }
 },

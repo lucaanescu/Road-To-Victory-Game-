@@ -1,0 +1,85 @@
+{
+"@path": "res://addons/dialogic/Resources/character.gd",
+"@subpath": NodePath(""),
+"_translation_id": "",
+"color": Color(0.186768, 0.252457, 0.9375, 1),
+"custom_info": {
+"prefix": "",
+"sound_mood_default": "",
+"sound_moods": {},
+"style": "",
+"suffix": ""
+},
+"default_portrait": "Reina_Normal",
+"description": "",
+"display_name": "Reina",
+"mirror": false,
+"nicknames": [""],
+"offset": Vector2(0, 0),
+"portraits": {
+"Reina_Normal": {
+"export_overrides": {
+"image": "\"res://Characters/Reina/Reina_2x.png\""
+},
+"mirror": true,
+"offset": Vector2(0, 0),
+"scale": 1.0,
+"scene": ""
+},
+"Reina_Surprised": {
+"export_overrides": {
+"image": "\"res://Characters/Reina/Reina_Surprised_Standard.png\""
+},
+"mirror": true,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Reina_Very_Mad": {
+"export_overrides": {
+"image": "\"res://Characters/Reina/Reina_Very_Mad_Standard.png\""
+},
+"mirror": true,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Reina_confused": {
+"export_overrides": {
+"image": "\"res://Characters/Reina/Reina_Confused_Standard.png\""
+},
+"mirror": true,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Reina_happy": {
+"export_overrides": {
+"image": "\"res://Characters/Reina/Reina_Happy_Standard.png\""
+},
+"mirror": true,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Reina_mad": {
+"export_overrides": {
+"image": "\"res://Characters/Reina/Reina_Mad_Standard.png\""
+},
+"mirror": true,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Reina_sad": {
+"export_overrides": {
+"image": "\"res://Characters/Reina/Reina_Sad_Standard.png\""
+},
+"mirror": true,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+}
+},
+"scale": 1.0
+}

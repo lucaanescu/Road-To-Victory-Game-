@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d2ovg3lo8npx1"
-path="res://.godot/imported/Jonas_Standard.png-56e6c297d5bec73d026ac1c6eb922ba2.ctex"
+uid="uid://cjtb0y4n52c8a"
+path="res://.godot/imported/Jonas_Surprised_Standard.png-2d5b10bec75ae5c7c1cbdde3745a006d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Characters/Jonas_Standard.png"
-dest_files=["res://.godot/imported/Jonas_Standard.png-56e6c297d5bec73d026ac1c6eb922ba2.ctex"]
+source_file="res://Characters/Jonas/Jonas_Surprised_Standard.png"
+dest_files=["res://.godot/imported/Jonas_Surprised_Standard.png-2d5b10bec75ae5c7c1cbdde3745a006d.ctex"]
 
 [params]
 

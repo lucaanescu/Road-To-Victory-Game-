@@ -6,6 +6,8 @@
 script = ExtResource("1_wxwbf")
 
 [node name="PanelContainer2" type="PanelContainer" parent="."]
+offset_left = 10.0
+offset_top = 12.0
 offset_right = 96.0
 offset_bottom = 43.0
 mouse_filter = 1
@@ -16,8 +18,12 @@ text = "Attributes"
 
 [node name="PanelContainer" type="PanelContainer" parent="."]
 visible = false
-offset_right = 166.0
-offset_bottom = 273.0
+visibility_layer = 2
+offset_left = 10.0
+offset_top = 12.0
+offset_right = 153.0
+offset_bottom = 465.0
+scale = Vector2(0.6, 0.545)
 mouse_filter = 1
 
 [node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer"]
@@ -29,6 +35,7 @@ layout_mode = 2
 size_flags_vertical = 3
 text = "Might:"
 editable = false
+text_direction = 1
 metadata/_edit_use_anchors_ = true
 
 [node name="Flexibility" type="TextEdit" parent="PanelContainer/VBoxContainer"]
@@ -77,3 +84,14 @@ size_flags_vertical = 3
 text = "Money:"
 editable = false
 metadata/_edit_use_anchors_ = true
+
+[connection signal="mouse_entered" from="PanelContainer2/Button" to="." method="_on_button_mouse_entered"]
+[connection signal="mouse_exited" from="PanelContainer" to="." method="_on_panel_container_mouse_exited"]
+[connection signal="mouse_exited" from="PanelContainer/VBoxContainer" to="." method="_on_v_box_container_mouse_exited"]
+[connection signal="mouse_exited" from="PanelContainer/VBoxContainer/Might" to="." method="_on_might_mouse_exited"]
+[connection signal="mouse_exited" from="PanelContainer/VBoxContainer/Flexibility" to="." method="_on_flexibility_mouse_exited"]
+[connection signal="mouse_exited" from="PanelContainer/VBoxContainer/Endurance" to="." method="_on_endurance_mouse_exited"]
+[connection signal="mouse_exited" from="PanelContainer/VBoxContainer/Charm" to="." method="_on_charm_mouse_exited"]
+[connection signal="mouse_exited" from="PanelContainer/VBoxContainer/Mind" to="." method="_on_mind_mouse_exited"]
+[connection signal="mouse_exited" from="PanelContainer/VBoxContainer/Spirit" to="." method="_on_spirit_mouse_exited"]
+[connection signal="mouse_exited" from="PanelContainer/VBoxContainer/Money" to="." method="_on_money_mouse_exited"]

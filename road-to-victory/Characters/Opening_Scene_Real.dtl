@@ -1,51 +1,247 @@
 Mystery: At long last-
 Mystery: My application is almost ready!!
 Mystery: I just need to fill out this questionnaire...
-Narator: As part of the Questionaire, you are asked a series of dumb questions about your past and maiden name to best alocate your fighter statistics
+Narator: As part of the Questionaire, you are asked a series of dumb questions. They dont make a whole lot of sense, but you put a little faith in the grand masters.
+Narator: They've been running this torunament for 100 (you think) years now! Surelly they've figured out the best way to seed it.
+Narator: Which you guess is, teen magazine style questions.
 Narator: As a kid you always loved to\:
 - Rough house
-	set {Might} += 3
-- Hang off the monkey bars
+	set {Might} += 6
+	set {Endurance} += 3
 	set {Flexibility} += 3
-- Read books
 	set {Mind} += 3
-- Stargaze
 	set {Spirit} += 3
+	set {Charm} += 3
+- Hang off the monkey bars
+	set {Flexibility} += 6
+	set {Endurance} += 3
+	set {Might} += 3
+	set {Mind} += 3
+	set {Spirit} += 3
+	set {Charm} += 3
+- Read books
+	set {Flexibility} += 3
+	set {Endurance} += 3
+	set {Might} += 3
+	set {Spirit} += 3
+	set {Mind} += 6
+	set {Charm} += 3
+- Stargaze
+	set {Flexibility} += 3
+	set {Endurance} += 3
+	set {Might} += 3
+	set {Mind} += 3
+	set {Spirit} += 6
+	set {Charm} += 3
+[signal arg="Changed_attribute"]
 Narator: If you had a week off school or work, Where would you Vacation?
 - The Caribbean
+	set {Flexibility} += 1
+	set {Endurance} += 1
+	set {Might} += 1
+	set {Mind} += 1
+	set {Spirit} += 1
 	set {Charm} += 3
 - Itally
+	set {Flexibility} += 1
+	set {Endurance} += 1
+	set {Charm} += 1
+	set {Mind} += 1
+	set {Spirit} += 1
 	set {Might} += 3
 - Japan
+	set {Flexibility} += 1
+	set {Endurance} += 1
+	set {Charm} += 1
+	set {Mind} += 1
+	set {Might} += 1
 	set {Spirit} += 3
 - New York
+	set {Spirit} += 1
+	set {Endurance} += 1
+	set {Charm} += 1
+	set {Mind} += 1
+	set {Might} += 1
 	set {Flexibility} += 3
+[signal arg="Changed_attribute"]
 Narator: What is your favorite exercise\:
 - Pushups
 	set {Might} += 3
+	set {Spirit} += 1
+	set {Endurance} += 1
+	set {Charm} += 1
+	set {Mind} += 1
+	set {Flexibility} += 1
 - Squats
 	set {Flexibility} += 3
+	set {Spirit} += 1
+	set {Endurance} += 1
+	set {Charm} += 1
+	set {Mind} += 1
+	set {Might} += 1
 - Planks
 	set {Endurance} += 3
+	set {Spirit} += 1
+	set {Flexibility} += 1
+	set {Charm} += 1
+	set {Mind} += 1
+	set {Might} += 1
 - Warrior Pose
 	set {Spirit} += 3
+	set {Endurance} += 1
+	set {Flexibility} += 1
+	set {Charm} += 1
+	set {Mind} += 1
+	set {Might} += 1
+[signal arg="Changed_attribute"]
 Narator: How many attempts do you try a claw machine before you give up on the prize?
 - 1 Attempt
 	set {Money} += 10
 - 3 Attempts
 	set {Money} += 7
-	set {Endurance} += 3
+	set {Endurance} += 2
 - 5 Attempts!
 	set {Money} += 5
-	set {Endurance} += 3
-	set {Mind} += 3
+	set {Endurance} += 2
+	set {Mind} += 2
 - UNLIMITED ATEMPTS!!!
-	set {Money} += 3
+	set {Money} += 2
+	set {Endurance} += 2
+	set {Mind} += 2
+	set {Might} += 2
+[signal arg="Changed_attribute"]
+Narator: What is the most EXTREME sport!?
+- Skateboarding!
+	set {Charm} += 3
+- Skydiving!
 	set {Endurance} += 3
+- Rockclimbing!!
+	set {Might} += 3
+- Ballet!!
+	set {Flexibility} = 3
+[signal arg="Changed_attribute"]
+Narator: What's the best snack?
+- Toast!
+	set {Endurance} += 3
+- String Cheese
+	set {Flexibility} += 3
+- Canned Coffee
 	set {Mind} += 3
-set 
+- Dried Fruits
+	set {Spirit} += 3
+[signal arg="Changed_attribute"]
+Narator: And lastley, which one liner would you say after staking a vampire?
+- This ones on the house!
+	set {Spirit} += 3
+- Astalavista Bitey!
+	set {Charm} += 3
+- Chew on this!
+	set {Mind} += 3
+- Die Monster!
+	set {Might} += 3
+[signal arg="Changed_attribute"]
+Mystery: Before you can start wondering which grandmaster writes out all these questins, someone aproaches you.
 join Aki center
 Aki: Hey, how long are you planing on keeping us waiting?
+Narator: You notice your friend Yuki looking at you with her serpent-like eyes.
 update Aki right
 join Sunny (Sunny_default) left
 Sunny (Sunny_default): Oh sorry Yuki, got kind of lost in the application process.
+Aki (Yuki_confused): I can see that-
+update Aki (Yuki_surprised)
+leave Aki [animation="Slide Out Down" length="3.0"]
+Narator: A large figure pushes Yuki out of the way.
+join Reina (Reina_mad) right
+Reina (Reina_mad): WE, in fact, have been watching you go through every step of writing it.
+update Sunny (Sunny_Happy)
+update Reina (Reina_confused)
+Sunny (Sunny_Happy): Sorry sorry! But I had to record it for my followers!
+Sunny (Sunny_default): Plus, I'm super excited!
+leave Reina [animation="Slide Out Down" length="3.0"]
+join Jonas (Jonas_Normal) right [length="3.0"]
+Jonas (Jonas_Normal): Yeah and you Should be!
+Narator: A tall and easygoing man joins in with a smile so wide you swear it hurts him.
+Jonas (Jonas_Normal): The World Combat Championships are only once every 10 years!
+Jonas (Jonas_Happy): Lucky us that they ran them just after we were all old enough to sign up!
+leave Jonas [length="3.0"]
+join Aki (Yuki_Happy) right [length="3.0"]
+Aki (Yuki_Happy): Yes, all of us, each one of us.
+leave Aki [animation="Instant Out" length="3.0"]
+join Reina (Reina_Surprised) right [length="3.0"]
+Reina: I still dont get why you two went through the trouble to sign me up for this.
+update Reina (Reina_mad)
+Reina: I have much more important things to do than go to another meaningless torunament.
+Sunny (Sunny_Happy): What like meditating under a waterfall?
+update Sunny (Sunny_Confused)
+update Reina (Reina_Normal)
+Reina: Yes actually, it's an excelent way to improve your Spirit against the harsh elements of nature as they ruthelessly wear you down in the cruelty of na-
+update Reina center [animation="Instant Out" length="3.0"]
+join Jonas (Jonas_Normal) right [length="3.0"]
+Jonas: In any case, I'm glad we're doing this! All of us, it wouldn't be right without you Reina.
+Sunny (Sunny_Happy): Yup! Ever since you saved us from that Skullout base you've been like family to us.
+update Jonas (Jonas_Surprised)
+update Reina (Reina_confused)
+Sunny (Sunny_Surprised): Except for that one time you ate raw meat at dinner with my parents...
+leave Reina [animation="Instant Out" length="3.0"]
+leave Jonas [length="3.0"]
+join Aki (Yuki_Happy) right [length="3.0"]
+Aki: Hey don't knock it till you try it Sunny. 
+Narator: There is a strange glint in her eye, it implies something somewhat sinister. Almost as if TWO of your friends are raw food enjoyers.
+update Aki (Yuki_default)
+update Sunny (Sunny_Confused)
+Aki: But speaking of your patrons, how did you manage to convince them to give you the car for the month?
+update Sunny (Sunny_default)
+Sunny: It wasn't easy, but after many rounds of begging and one prevented mugging later and they let me borrow it.
+Sunny: But part of that condition to use also means they will let me travel with it from tournament to torunament.
+Sunny (Sunny_Mad): And prove to them this lifestyle is more than just a phase!
+update Aki center
+join Jonas (Jonas_Normal) right
+Jonas: Yeah, its like your dream to become a super powerful martial artist.
+update Jonas (Jonas_Sad) right
+update Aki (Yuki_sad) right
+Jonas: It would be a shame if you never got to even try to achieve that dream because your parents needed the car for groceries.
+Sunny (Sunny_Sad): Or straight up ground me...
+update Jonas (Jonas_Normal)
+Jonas: I mean, I think that's the one thing they can't do since you're a legal adult now.
+update Jonas (Jonas_Happy)
+update Aki (Yuki_Happy)
+Sunny (Sunny_Mad): Ok funny guy, yeah they can't do that anymore but... I guess what would they do to punish me nowdays...
+update Aki (Yuki_default)
+Aki: I think the point is that they are sweet for at least letting you try to be like the legendary Akira but way cuter.
+Sunny: Thanks! and yeah! While torunaments are cool, they were all small time. But now-
+Sunny (Sunny_Happy): This is the real deal! doesn't get bigger than The World Champion Cup!
+Sunny: And if I can win it!? Or just make it into the top 7 it will put me on the map!
+update Aki (Yuki_confused)
+update Aki center
+Sunny (Sunny_Sad): That or I'll go to college for business studies....
+Sunny (Sunny_Sad): Or biology...
+Sunny (Sunny_Sad): ...
+Sunny (Sunny_Happy): But that's not gonna happen! I'm taking that gold home!
+update Aki (Yuki_Happy) center
+join Jonas (Jonas_Happy) right
+Jonas: That's the spirit Sunny! We're gonna do great I just know it!
+update Aki (Yuki_default)
+Aki: Well we're not gonna be doing anything unless we get there.
+Aki: The place is like 3 days away, we should get driving.
+update Jonas (Jonas_Happy)
+Jonas: I call shotgun!
+leave Jonas
+Aki: I ca-
+update Aki (Yuki_angry)
+Aki: Fuck!
+update Aki (Yuki_default)
+Aki: Well I lost shotgun, but you're driving Sunny. Your car after all.
+update Aki (Yuki_Happy)
+Aki: Here, catch!
+Narator: A metal collection imedietly makes it's way to you at a great speed!
+Narator: You can't lose your mothers car keys! Otherwise they'll kill you! maybe even literally!?
+Narator: In any case, you need to...
+- Catch them | [if {RollResults.RollResult Flex} >= 8]
+	[signal arg="RollDice"]
+- Let them hit your face and pick them up later | [if {RollResults.RollResult End} >= 8]
+	[signal arg="RollDice"]
+- Call for Reina | [if {RollResults.RollResult Charm} >= 8]
+	[signal arg="RollDice"]
+if {RollResults.RollResult Flex} <= 8:
+elif {RollResults.RollResult End} <= 8:
+elif {RollResults.RollResult Charm} <= 8:

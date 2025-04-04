@@ -24,8 +24,10 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 
 directories/dch_directory={
 "Aki": "res://Characters/Aki.dch",
+"Jonas": "res://Jonas.dch",
 "Mystery": "res://Characters/Mystery.dch",
 "Narator": "res://Characters/Narator.dch",
+"Reina": "res://Characters/Sunny/Reina.dch",
 "Sunny": "res://Characters/Sunny.dch"
 }
 directories/dtl_directory={
@@ -75,6 +77,15 @@ variables={
 "Might": 0.0,
 "Mind": 0.0,
 "Money": 0.0,
+"RollResults": {
+"DiceRoll": 0.0,
+"RollResult Charm": 0.0,
+"RollResult End": 0.0,
+"RollResult Flex": 0.0,
+"RollResult Might": 0.0,
+"RollResult Mind": 0.0,
+"RollResult Spirit": 0.0
+},
 "Spirit": 0.0
 }
 text/autocolor_names=false

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://gyxnw7a5vqm0"
-path="res://.godot/imported/Yuki_2x.png-990b897fcfca329ba8bfa2775fee95c5.ctex"
+uid="uid://baqfby1j8i11l"
+path="res://.godot/imported/UpscaledDice_White.png-48e662a0749c33041317662b0a8d99b1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Characters/Yuki_2x.png"
-dest_files=["res://.godot/imported/Yuki_2x.png-990b897fcfca329ba8bfa2775fee95c5.ctex"]
+source_file="res://CuteDice - AssetPack_v1.0/UpscaledDice_White.png"
+dest_files=["res://.godot/imported/UpscaledDice_White.png-48e662a0749c33041317662b0a8d99b1.ctex"]
 
 [params]
 

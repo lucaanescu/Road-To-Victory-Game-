@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://txkbofcwu4wy"
-path="res://.godot/imported/Reina_2x.png-6d82fc867592e41b57802d05695995d4.ctex"
+uid="uid://bkbfx2kj3a4ki"
+path="res://.godot/imported/PixelDice_White.png-d8894d743a4b2162eb00aa8f408b4a45.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Characters/Reina_2x.png"
-dest_files=["res://.godot/imported/Reina_2x.png-6d82fc867592e41b57802d05695995d4.ctex"]
+source_file="res://CuteDice - AssetPack_v1.0/PixelDice_White.png"
+dest_files=["res://.godot/imported/PixelDice_White.png-d8894d743a4b2162eb00aa8f408b4a45.ctex"]
 
 [params]
 
