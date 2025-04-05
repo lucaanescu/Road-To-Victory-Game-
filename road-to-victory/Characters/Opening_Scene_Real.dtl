@@ -198,7 +198,7 @@ update Aki center
 join Jonas (Jonas_Normal) right
 Jonas: Yeah, its like your dream to become a super powerful martial artist.
 update Jonas (Jonas_Sad) right
-update Aki (Yuki_sad) right
+update Aki (Yuki_sad) center
 Jonas: It would be a shame if you never got to even try to achieve that dream because your parents needed the car for groceries.
 Sunny (Sunny_Sad): Or straight up ground me...
 update Jonas (Jonas_Normal)
@@ -216,12 +216,14 @@ update Aki center
 Sunny (Sunny_Sad): That or I'll go to college for business studies....
 Sunny (Sunny_Sad): Or biology...
 Sunny (Sunny_Sad): ...
-Sunny (Sunny_Happy): But that's not gonna happen! I'm taking that gold home!
+update Aki (Yuki_Happy) left [move_time="0.6"]
+Aki (Yuki_Happy): But that's not gonna happen! I'm taking that gold home!
 update Aki (Yuki_Happy) center
 join Jonas (Jonas_Happy) right
 Jonas: That's the spirit Sunny! We're gonna do great I just know it!
 update Aki (Yuki_default)
 Aki: Well we're not gonna be doing anything unless we get there.
+update Aki (Yuki_Happy) center [move_time="0.6"]
 Aki: The place is like 3 days away, we should get driving.
 update Jonas (Jonas_Happy)
 Jonas: I call shotgun!
@@ -236,12 +238,9 @@ Aki: Here, catch!
 Narator: A metal collection imedietly makes it's way to you at a great speed!
 Narator: You can't lose your mothers car keys! Otherwise they'll kill you! maybe even literally!?
 Narator: In any case, you need to...
-- Catch them | [if {RollResults.RollResult Flex} >= 8]
+- Catch them
 	[signal arg="RollDice"]
-- Let them hit your face and pick them up later | [if {RollResults.RollResult End} >= 8]
+- Let them hit your face and pick them up later
 	[signal arg="RollDice"]
-- Call for Reina | [if {RollResults.RollResult Charm} >= 8]
+- Call for Reina
 	[signal arg="RollDice"]
-if {RollResults.RollResult Flex} <= 8:
-elif {RollResults.RollResult End} <= 8:
-elif {RollResults.RollResult Charm} <= 8:
