@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://c7k5po60trj0h" path="res://Backgrounds/istockphoto-1415886887-612x612.jpg" id="1_v4lbx"]
 [ext_resource type="Script" path="res://First_map_start.gd" id="1_vnvi4"]
 [ext_resource type="PackedScene" uid="uid://dkfkmyyegalju" path="res://Stats_block_Menu.tscn" id="3_r2uyi"]
-[ext_resource type="PackedScene" uid="uid://bcou5fiuf6dmy" path="res://dice_roll.tscn" id="4_euukt"]
+[ext_resource type="Script" path="res://Spawn_dice.gd" id="4_rqqoa"]
 
 [sub_resource type="Animation" id="Animation_x7w64"]
 resource_name = "Fade_out_in"
@@ -81,6 +81,6 @@ libraries = {
 [node name="Stats" parent="." instance=ExtResource("3_r2uyi")]
 layer = 2
 
-[node name="Dice-Roll" parent="." instance=ExtResource("4_euukt")]
-visible = false
-position = Vector2(573, 304)
+[node name="Node2D" type="Node2D" parent="."]
+position = Vector2(-367, -122)
+script = ExtResource("4_rqqoa")

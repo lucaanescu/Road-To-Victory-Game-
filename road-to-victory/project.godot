@@ -72,21 +72,18 @@ audio/channel_defaults={
 }
 variables={
 "Charm": 0.0,
+"Charm_result": 0.0,
 "Endurance": 0.0,
+"Endurance_result": 0.0,
 "Flexibility": 0.0,
+"Flexibility_result": 0.0,
 "Might": 0.0,
+"Might_result": 0.0,
 "Mind": 0.0,
+"Mind_result": 0.0,
 "Money": 0.0,
-"RollResults": {
-"DiceRoll": 0.0,
-"RollResult Charm": 0.0,
-"RollResult End": 0.0,
-"RollResult Flex": 0.0,
-"RollResult Might": 0.0,
-"RollResult Mind": 0.0,
-"RollResult Spirit": 0.0
-},
-"Spirit": 0.0
+"Spirit": 0.0,
+"Spirit_result": 0.0
 }
 text/autocolor_names=false
 history/simple_history_enabled=true

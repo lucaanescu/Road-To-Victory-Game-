@@ -6,14 +6,14 @@ Narator: They've been running this torunament for 100 (you think) years now! Sur
 Narator: Which you guess is, teen magazine style questions.
 Narator: As a kid you always loved to\:
 - Rough house
-	set {Might} += 6
+	set {Might} += 5
 	set {Endurance} += 3
 	set {Flexibility} += 3
 	set {Mind} += 3
 	set {Spirit} += 3
 	set {Charm} += 3
 - Hang off the monkey bars
-	set {Flexibility} += 6
+	set {Flexibility} += 5
 	set {Endurance} += 3
 	set {Might} += 3
 	set {Mind} += 3
@@ -24,14 +24,14 @@ Narator: As a kid you always loved to\:
 	set {Endurance} += 3
 	set {Might} += 3
 	set {Spirit} += 3
-	set {Mind} += 6
+	set {Mind} += 5
 	set {Charm} += 3
 - Stargaze
 	set {Flexibility} += 3
 	set {Endurance} += 3
 	set {Might} += 3
 	set {Mind} += 3
-	set {Spirit} += 6
+	set {Spirit} += 5
 	set {Charm} += 3
 [signal arg="Changed_attribute"]
 Narator: If you had a week off school or work, Where would you Vacation?
@@ -118,7 +118,7 @@ Narator: What is the most EXTREME sport!?
 - Rockclimbing!!
 	set {Might} += 3
 - Ballet!!
-	set {Flexibility} = 3
+	set {Flexibility} += 3
 [signal arg="Changed_attribute"]
 Narator: What's the best snack?
 - Toast!
@@ -185,7 +185,7 @@ Sunny (Sunny_Surprised): Except for that one time you ate raw meat at dinner wit
 leave Reina [animation="Instant Out" length="3.0"]
 leave Jonas [length="3.0"]
 join Aki (Yuki_Happy) right [length="3.0"]
-Aki: Hey don't knock it till you try it Sunny. 
+Aki: Hey don't knock it till you try it Sunny.
 Narator: There is a strange glint in her eye, it implies something somewhat sinister. Almost as if TWO of your friends are raw food enjoyers.
 update Aki (Yuki_default)
 update Sunny (Sunny_Confused)
@@ -240,7 +240,25 @@ Narator: You can't lose your mothers car keys! Otherwise they'll kill you! maybe
 Narator: In any case, you need to...
 - Catch them
 	[signal arg="RollDice"]
+	[signal arg="FlexibilityCall"]
+	[wait time="5.0"]
+	if {Flexibility_result} >= 10:
+		Narator: Flexibility success!
+	elif {Flexibility_result} < 10:
+		Narator: Flexibility Fail...
 - Let them hit your face and pick them up later
 	[signal arg="RollDice"]
+	[signal arg="EnduranceCall"]
+	[wait time="5.0"]
+	if {Endurance_result} >= 10:
+		Narator: Endurance succes!
+	elif {Endurance_result} < 10:
+		Narator: Endurance Fail...
 - Call for Reina
 	[signal arg="RollDice"]
+	[signal arg="CharmCall"]
+	[wait time="5.0"]
+	if {Charm_result} >= 10:
+		Narator: Charm success!
+	elif {Charm_result} < 10:
+		Narator: Charm Fail...

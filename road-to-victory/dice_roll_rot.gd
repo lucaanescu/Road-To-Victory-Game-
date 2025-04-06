@@ -1,21 +1,33 @@
-extends AnimatedSprite2D
+extends Sprite2D
 
-var rot_speed = 15
-var Rand = RandomNumberGenerator.new()
-var Vector = Vector2(1,0)
+var roll_value = 0
+signal die_result(roll_value)
 
-func choose(array):
-	array.shuffle()
-	return array.front()
-
-func _on_dialogic_signal(argument:String):
-	if argument == "RollDice":
-		self.visible = true
-		var randX = Rand.randf_range(-5,5)
-		var randY = Rand.randf_range(-5,5)
-		var dir = Vector2(randX, randY)
-		#parent.velocity = dir * rot_speed
+func _ready():
 	
-		dir = choose([Vector2.RIGHT, Vector2.UP, Vector2.LEFT, Vector2.DOWN])
-		print (dir)
-		#random direction spinner still needs adjustments
+	$AnimationPlayer.play("Roll")
+	
+	await get_tree().create_timer(1.8).timeout
+	
+	randomize()
+	roll_value = int(randf_range(1,7))
+	print(roll_value)
+
+	if roll_value == 1:
+		self.set_frame(6)
+	if roll_value == 2:
+		self.set_frame(7)
+	if roll_value == 3:
+		self.set_frame(8)
+	if roll_value == 4:
+		self.set_frame(9)
+	if roll_value == 5:
+		self.set_frame(10)
+	if roll_value == 6:
+		self.set_frame(11)
+
+	emit_signal("die_result",roll_value)
+
+	await get_tree().create_timer(3.0).timeout
+	
+	self.queue_free()

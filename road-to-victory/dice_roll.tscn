@@ -1,137 +1,114 @@
-[gd_scene load_steps=16 format=3 uid="uid://bcou5fiuf6dmy"]
+[gd_scene load_steps=6 format=3 uid="uid://bcou5fiuf6dmy"]
 
 [ext_resource type="Texture2D" uid="uid://6q2odscva1ld" path="res://CuteDice - AssetPack_v1.0/UpscaledDice_Pink.png" id="1_huy2o"]
 [ext_resource type="Script" path="res://dice_roll_rot.gd" id="2_8myje"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_vtdwc"]
-atlas = ExtResource("1_huy2o")
-region = Rect2(0, 560, 112, 112)
+[sub_resource type="Animation" id="Animation_ihjsw"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-255.061, 1420.41)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [31]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [2.87979]
+}
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_74j4j"]
-atlas = ExtResource("1_huy2o")
-region = Rect2(112, 560, 112, 112)
+[sub_resource type="Animation" id="Animation_wmhsv"]
+resource_name = "Roll"
+length = 2.0365
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.233333, 0.433333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(-255.061, 1420.41), Vector2(-255.061, 1420.41), Vector2(-255.061, 1420.41)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.0666667, 0.233333, 0.366667, 0.5, 0.666667, 0.833333, 0.966667, 1.13333, 1.26667, 1.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [30, 31, 35, 30, 31, 34, 35, 30, 31, 34, 35]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.233333, 0.433333, 0.6, 0.833333, 1.06667, 1.33333, 1.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [2.87979, 4.38078, 5.67232, 6.80678, 9.31133, 10.9956, 11.781, 1.309]
+}
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_rhstr"]
-atlas = ExtResource("1_huy2o")
-region = Rect2(224, 560, 112, 112)
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_1pfq8"]
+_data = {
+"RESET": SubResource("Animation_ihjsw"),
+"Roll": SubResource("Animation_wmhsv")
+}
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_x0m71"]
-atlas = ExtResource("1_huy2o")
-region = Rect2(336, 560, 112, 112)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_0ocn3"]
-atlas = ExtResource("1_huy2o")
-region = Rect2(448, 560, 112, 112)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_wjmcv"]
-atlas = ExtResource("1_huy2o")
-region = Rect2(560, 560, 112, 112)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_qqq8x"]
-atlas = ExtResource("1_huy2o")
-region = Rect2(0, 560, 112, 112)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_75bre"]
-atlas = ExtResource("1_huy2o")
-region = Rect2(112, 560, 112, 112)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_mewcb"]
-atlas = ExtResource("1_huy2o")
-region = Rect2(224, 560, 112, 112)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_jr45y"]
-atlas = ExtResource("1_huy2o")
-region = Rect2(336, 560, 112, 112)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_duht7"]
-atlas = ExtResource("1_huy2o")
-region = Rect2(448, 560, 112, 112)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_botk4"]
-atlas = ExtResource("1_huy2o")
-region = Rect2(560, 560, 112, 112)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_6i50l"]
-animations = [{
-"frames": [],
-"loop": true,
-"name": &"1",
-"speed": 5.0
-}, {
-"frames": [],
-"loop": true,
-"name": &"2",
-"speed": 5.0
-}, {
-"frames": [],
-"loop": true,
-"name": &"3",
-"speed": 5.0
-}, {
-"frames": [],
-"loop": true,
-"name": &"4",
-"speed": 5.0
-}, {
-"frames": [],
-"loop": true,
-"name": &"5",
-"speed": 5.0
-}, {
-"frames": [],
-"loop": true,
-"name": &"6",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 0.5,
-"texture": SubResource("AtlasTexture_vtdwc")
-}, {
-"duration": 0.5,
-"texture": SubResource("AtlasTexture_74j4j")
-}, {
-"duration": 0.5,
-"texture": SubResource("AtlasTexture_rhstr")
-}, {
-"duration": 0.5,
-"texture": SubResource("AtlasTexture_x0m71")
-}, {
-"duration": 0.5,
-"texture": SubResource("AtlasTexture_0ocn3")
-}, {
-"duration": 0.5,
-"texture": SubResource("AtlasTexture_wjmcv")
-}, {
-"duration": 0.5,
-"texture": SubResource("AtlasTexture_qqq8x")
-}, {
-"duration": 0.5,
-"texture": SubResource("AtlasTexture_75bre")
-}, {
-"duration": 0.5,
-"texture": SubResource("AtlasTexture_mewcb")
-}, {
-"duration": 0.5,
-"texture": SubResource("AtlasTexture_jr45y")
-}, {
-"duration": 0.5,
-"texture": SubResource("AtlasTexture_duht7")
-}, {
-"duration": 0.5,
-"texture": SubResource("AtlasTexture_botk4")
-}],
-"loop": true,
-"name": &"Roll Anim",
-"speed": 8.0
-}]
-
-[node name="Dice-Roll" type="AnimatedSprite2D"]
-visibility_layer = 2
-position = Vector2(611, 316)
+[node name="Dice-Roll" type="Node2D"]
 rotation = -1.309
 scale = Vector2(0.5, 0.5)
-sprite_frames = SubResource("SpriteFrames_6i50l")
-animation = &"Roll Anim"
-frame = 2
-frame_progress = 0.317511
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(-305.852, 1284.94)
+scale = Vector2(1, 1)
+
+[node name="Dice" type="Sprite2D" parent="."]
+light_mask = 7
+visibility_layer = 7
+position = Vector2(-255.061, 1420.41)
+rotation = 2.87979
+scale = Vector2(1, 1)
+texture = ExtResource("1_huy2o")
+hframes = 6
+vframes = 6
+frame = 31
 script = ExtResource("2_8myje")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Dice"]
+libraries = {
+"": SubResource("AnimationLibrary_1pfq8")
+}
