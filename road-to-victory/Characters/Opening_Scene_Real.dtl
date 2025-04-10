@@ -192,7 +192,7 @@ update Sunny (Sunny_Confused)
 Aki: But speaking of your patrons, how did you manage to convince them to give you the car for the month?
 update Sunny (Sunny_default)
 Sunny: It wasn't easy, but after many rounds of begging and one prevented mugging later and they let me borrow it.
-Sunny: But part of that condition to use also means they will let me travel with it from tournament to torunament.
+Sunny (Sunny_Surprised): But part of that condition to use also means they will let me travel with it from tournament to torunament.
 Sunny (Sunny_Mad): And prove to them this lifestyle is more than just a phase!
 update Aki center
 join Jonas (Jonas_Normal) right
@@ -208,20 +208,21 @@ update Aki (Yuki_Happy)
 Sunny (Sunny_Mad): Ok funny guy, yeah they can't do that anymore but... I guess what would they do to punish me nowdays...
 update Aki (Yuki_default)
 Aki: I think the point is that they are sweet for at least letting you try to be like the legendary Akira but way cuter.
-Sunny: Thanks! and yeah! While torunaments are cool, they were all small time. But now-
+Sunny (Sunny_default): Thanks! and yeah! While torunaments are cool, they were all small time. But now-
 Sunny (Sunny_Happy): This is the real deal! doesn't get bigger than The World Champion Cup!
-Sunny: And if I can win it!? Or just make it into the top 7 it will put me on the map!
+Sunny (Sunny_Happy): And if I can win it!? Or just make it into the top 7 it will put me on the map!
 update Aki (Yuki_confused)
 update Aki center
 Sunny (Sunny_Sad): That or I'll go to college for business studies....
 Sunny (Sunny_Sad): Or biology...
 Sunny (Sunny_Sad): ...
 update Aki (Yuki_Happy) left [move_time="0.6"]
-Aki (Yuki_Happy): But that's not gonna happen! I'm taking that gold home!
+Aki (Yuki_Happy): But that's not gonna happen! We're taking that gold home!
 update Aki (Yuki_Happy) center
 join Jonas (Jonas_Happy) right
-Jonas: That's the spirit Sunny! We're gonna do great I just know it!
+Jonas: That's the spirit Yuki! We're gonna do great I just know it!
 update Aki (Yuki_default)
+update Sunny (Sunny_default)
 Aki: Well we're not gonna be doing anything unless we get there.
 update Aki (Yuki_Happy) center [move_time="0.6"]
 Aki: The place is like 3 days away, we should get driving.
@@ -231,7 +232,7 @@ leave Jonas
 Aki: I ca-
 update Aki (Yuki_angry)
 Aki: Fuck!
-update Aki (Yuki_default)
+update Aki (Yuki_default) right
 Aki: Well I lost shotgun, but you're driving Sunny. Your car after all.
 update Aki (Yuki_Happy)
 Aki: Here, catch!
@@ -243,22 +244,119 @@ Narator: In any case, you need to...
 	[signal arg="FlexibilityCall"]
 	[wait time="5.0"]
 	if {Flexibility_result} >= 10:
+		update Sunny (Sunny_Happy)
 		Narator: Flexibility success!
+		Narator: You manage to stretch your hand out at just the right moment and the keys stick the landing!
+		Aki (Yuki_Happy): Hah, nice
+		Aki (Yuki_Happy): Alright, seya at the car slowpoke!
+		leave Aki
+		Sunny: Huh, that was kind of an impresive catch, nice one me!
 	elif {Flexibility_result} < 10:
+		update Sunny (Sunny_Sad)
 		Narator: Flexibility Fail...
+		Narator: You try to reach out and catch the keys but not close enough.
+		Narator: Yet you we're close enough to hit them with your index finger and push them even further away!
+		Aki (Yuki_confused): Ah, uh...
+		Aki: Sorry... I think they're over there?
+		update Aki (Yuki_default) center
+		Narator: Yuki begins pointing at different spots in the grass in an attempt to help but not direcly grabing anything.
+		update Sunny (Sunny_Mad)
+		Sunny: I'm sure if you just helped me grab them instead of pointing this would be uh hehe,
+		Sunny: A lot easyer?
+		update Sunny (Sunny_Confused)
+		Aki: Probably.
+		Sunny: ...
+		update Aki (Yuki_default)
+		update Sunny (Sunny_default)
+		Narator: After a few minutes you eventually retrieve the keys.
+		Aki: Alright cool, see you in the car then!
+		leave Aki
 - Let them hit your face and pick them up later
 	[signal arg="RollDice"]
 	[signal arg="EnduranceCall"]
 	[wait time="5.0"]
 	if {Endurance_result} >= 10:
 		Narator: Endurance succes!
+		update Sunny (Sunny_Happy)
+		update Aki (Yuki_surprised)
+		Narator: They very much do exactly that. A thud is audible but you don't flinch and grab them as they slide off your face.
+		Aki: Dang, that was an interesting impersonation of a brick wall.
+		update Sunny (Sunny_Happy)
+		Sunny: You bet! my nickname in highschool was "The Rock"!
+		Aki: Hah! people must have loved throwing things at you then.
+		update Sunny (Sunny_Confused)
+		Sunny: Uh n-not, really-
+		Aki: Anyways, see you at the car "Ms wall".
+		leave Aki
 	elif {Endurance_result} < 10:
 		Narator: Endurance Fail...
+		Narator: The Keys hit you, and it hurt.
+		update Sunny (Sunny_Sad)
+		update Aki (Yuki_confused)
+		Sunny: Ow oh ow ow ow ow ow
+		update Aki (Yuki_sad)
+		Aki: Um, you alright? Should I-
+		Sunny: No no I'm all good! Trust me...
+		Aki: Uh you sure? I-It almost looks like you're crying.
+		Aki: Are you cry-
+		Sunny: No! I'm all good! See you at the car!
+		Aki: Alright then, seya there
+		leave Aki
+		[wait time="1.5"]
+		Narator: You manage to cry only a little. Thankfully you manage to stop shortly after Yuki walks off.
 - Call for Reina
 	[signal arg="RollDice"]
 	[signal arg="CharmCall"]
 	[wait time="5.0"]
 	if {Charm_result} >= 10:
 		Narator: Charm success!
+		join Reina center
+		update Aki (Yuki_surprised)
+		update Sunny (Sunny_Happy)
+		Narator: You call for Reina's help and like a bolt of lightning she is by your side
+		Aki: Huh, good catch there.
+		Reina: It was nothing.
+		update Reina (Reina_mad)
+		Reina: Next time you call me I hope it's more serious than some keys.
+		update Sunny (Sunny_default)
+		Sunny: But Rei, those were super strong keys! they might have threatened my life! 
+		leave Aki
+		update Reina (Reina_confused)
+		Reina: Hah, very funny. (Unless these are tungsten keys... no)
+		update Reina (Reina_Normal)
+		Reina: See you at the car.
+		leave Reina
 	elif {Charm_result} < 10:
 		Narator: Charm Fail...
+		Narator: You call for Reina's help but it seems she wasnt paying any attention to you.
+		join Reina (Reina_Surprised) center
+		update Aki (Yuki_surprised)
+		update Sunny (Sunny_Surprised)
+		Reina: Huh wha-
+		update Reina (Reina_mad)
+		update Aki (Yuki_sad)
+		update Sunny (Sunny_Sad)
+		Reina: OUCH!
+		Reina: What, keys? why would you throw keys at me!?
+		Aki: My bad, I wanted to see if your toned muscles could bounce a few keys off
+		update Reina (Reina_Very_Mad)
+		Reina: WHILE I WASNT LOOKING?!
+		update Reina (Reina_Normal)
+		Sunny: No it was my bad, I thought it would be cool if you could catch them and I... called-
+		Reina: Whatever, I'm going to the car.
+		Narator: She places the keys off in your hand and walks off.
+		leave Reina
+		leave Aki
+	Narator: With that out of the way, it's time to get moving.
+	Narator: Just three days away.
+	Narator: Three days to train and prepare for the big torunament.
+	Narator: A once in a lifetime trip and torunament.
+	update Sunny (Sunny_Happy)
+	Narator: Time to make some new memories and friends!
+	update Sunny (Sunny_blush)
+	Narator: And maybe something... more than friends?
+	update Sunny (Sunny_Surprised)
+	Jonas: Comeon, we're waiting to go girl!
+	update Sunny (Sunny_Happy)
+	Narator: This is gonna be one kickass trip.
+	leave Sunny

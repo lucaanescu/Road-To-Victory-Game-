@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://dkfkmyyegalju"]
 
-[ext_resource type="Script" path="res://stats_screen_visible.gd" id="1_wxwbf"]
+[ext_resource type="Script" path="res://Scripts/stats_screen_visible.gd" id="1_wxwbf"]
 
 [node name="Stats" type="CanvasLayer"]
 script = ExtResource("1_wxwbf")

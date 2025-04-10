@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://bcou5fiuf6dmy"]
 
 [ext_resource type="Texture2D" uid="uid://6q2odscva1ld" path="res://CuteDice - AssetPack_v1.0/UpscaledDice_Pink.png" id="1_huy2o"]
-[ext_resource type="Script" path="res://dice_roll_rot.gd" id="2_8myje"]
+[ext_resource type="Script" path="res://Scripts/dice_roll_rot.gd" id="2_8myje"]
 
 [sub_resource type="Animation" id="Animation_ihjsw"]
 length = 0.001
@@ -94,14 +94,12 @@ scale = Vector2(0.5, 0.5)
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(-305.852, 1284.94)
-scale = Vector2(1, 1)
 
 [node name="Dice" type="Sprite2D" parent="."]
 light_mask = 7
 visibility_layer = 7
 position = Vector2(-255.061, 1420.41)
 rotation = 2.87979
-scale = Vector2(1, 1)
 texture = ExtResource("1_huy2o")
 hframes = 6
 vframes = 6

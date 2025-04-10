@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c31aean5eu0mh"
-path="res://.godot/imported/Sunny_Blush_Standard.png-30c45270c3c0904814daaa98599259a7.ctex"
+uid="uid://cpkwgbsrs3rhd"
+path="res://.godot/imported/SanJulioMap.webp-adf521818c6b592fd342beecd5a7eafc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Characters/Sunny/Sunny_Blush_Standard.png"
-dest_files=["res://.godot/imported/Sunny_Blush_Standard.png-30c45270c3c0904814daaa98599259a7.ctex"]
+source_file="res://Backgrounds/SanJulioMap.webp"
+dest_files=["res://.godot/imported/SanJulioMap.webp-adf521818c6b592fd342beecd5a7eafc.ctex"]
 
 [params]
 

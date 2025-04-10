@@ -10,3 +10,4 @@ func _on_dialogic_signal(argument:String):
 		var dice = scene.instantiate()
 		add_child(dice)
 		print("im spawning dice")
+		
