@@ -24,14 +24,14 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 
 directories/dch_directory={
 "Aki": "res://Characters/Aki.dch",
-"Jonas": "res://Jonas.dch",
+"Jonas": "res://Characters/Jonas.dch",
 "Mystery": "res://Characters/Mystery.dch",
 "Narator": "res://Characters/Narator.dch",
 "Reina": "res://Characters/Sunny/Reina.dch",
 "Sunny": "res://Characters/Sunny.dch"
 }
 directories/dtl_directory={
-"First_Travel": "res://First_Travel.dtl",
+"First_Travel": "res://Timelines/First_Travel.dtl",
 "Opening Scene": "res://Timelines/Opening Scene.dtl",
 "Opening_Scene_Real": "res://Timelines/Opening_Scene_Real.dtl"
 }

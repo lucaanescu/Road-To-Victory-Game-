@@ -4,13 +4,12 @@
 [ext_resource type="Texture2D" uid="uid://b6u6x20gn016w" path="res://Backgrounds/5818194.png" id="2_t77go"]
 
 [node name="Car_overworld" type="Node2D"]
+scale = Vector2(0.3, 0.3)
 script = ExtResource("1_1s5lm")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(448, 315)
-scale = Vector2(0.134766, 0.134766)
+scale = Vector2(0.5, 0.5)
 texture = ExtResource("2_t77go")
 
 [node name="Camera2D" type="Camera2D" parent="Sprite2D"]
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite2D"]
+position_smoothing_enabled = true
