@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://i543618oy47f"]
+
+[ext_resource type="Texture2D" uid="uid://cpkwgbsrs3rhd" path="res://Backgrounds/SanJulioMap.webp" id="1_2x31l"]
+[ext_resource type="Script" path="res://point_map_generator.gd" id="1_h5gjb"]
+[ext_resource type="PackedScene" uid="uid://ckwveuw58rpgb" path="res://car_overworld.tscn" id="2_2apfl"]
+[ext_resource type="PackedScene" uid="uid://bn3lvnti162d3" path="res://reset_manager.tscn" id="3_mn4tp"]
+
+[node name="World_generation" type="Node2D"]
+
+[node name="pointMapGenerator" type="Node2D" parent="."]
+script = ExtResource("1_h5gjb")
+
+[node name="Line2D" type="Line2D" parent="."]
+
+[node name="SanJulioMap" type="Sprite2D" parent="."]
+position = Vector2(235, -605)
+scale = Vector2(2.176, 2.176)
+texture = ExtResource("1_2x31l")
+
+[node name="Car_overworld" parent="." instance=ExtResource("2_2apfl")]
+position = Vector2(532, 315)
+
+[node name="Reset_Manager" parent="." instance=ExtResource("3_mn4tp")]
+position = Vector2(532, 315)

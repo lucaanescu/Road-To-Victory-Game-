@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bn3lvnti162d3"]
+
+[ext_resource type="Script" path="res://Scripts/reset_manager.gd" id="1_obkmx"]
+
+[node name="Reset_Manager" type="Node2D"]
+script = ExtResource("1_obkmx")

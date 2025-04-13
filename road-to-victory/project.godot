@@ -10,10 +10,10 @@ config_version=5
 
 [application]
 
-config/name="Road to Victory"
+config/name="AstarAccUnderstood"
 run/main_scene="res://Game_start.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="res://icon.png"
 
 [autoload]
 
@@ -31,8 +31,9 @@ directories/dch_directory={
 "Sunny": "res://Characters/Sunny.dch"
 }
 directories/dtl_directory={
+"First_Travel": "res://First_Travel.dtl",
 "Opening Scene": "res://Timelines/Opening Scene.dtl",
-"Opening_Scene_Real": "res://Characters/Opening_Scene_Real.dtl"
+"Opening_Scene_Real": "res://Timelines/Opening_Scene_Real.dtl"
 }
 glossary/default_case_sensitive=true
 layout/style_list=["res://Characters/Regular Dialogue.tres"]
@@ -110,3 +111,16 @@ dialogic_default_action={
 , Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":0,"button_index":0,"pressure":0.0,"pressed":false,"script":null)
 ]
 }
+click={
+"deadzone": 0.5,
+"events": [Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"button_mask":0,"position":Vector2(0, 0),"global_position":Vector2(0, 0),"factor":1.0,"button_index":1,"canceled":false,"pressed":false,"double_click":false,"script":null)
+]
+}
+
+[physics]
+
+common/enable_pause_aware_picking=true
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"

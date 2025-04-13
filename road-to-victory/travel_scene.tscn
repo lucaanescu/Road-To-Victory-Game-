@@ -1,5 +1,14 @@
-[gd_scene format=3 uid="uid://cgxsvlsegnvvc"]
+[gd_scene load_steps=3 format=3 uid="uid://cgxsvlsegnvvc"]
+
+[ext_resource type="Texture2D" uid="uid://cpkwgbsrs3rhd" path="res://Backgrounds/SanJulioMap.webp" id="1_daxll"]
+[ext_resource type="Script" path="res://Scripts/Car_script.gd" id="1_ihamg"]
 
 [node name="Travel Scene" type="CanvasLayer"]
+script = ExtResource("1_ihamg")
 
-[node name="Player-icon" type="Node2D" parent="."]
+[node name="Map" type="Sprite2D" parent="."]
+position = Vector2(563, 570)
+texture = ExtResource("1_daxll")
+
+[node name="Start" type="Marker2D" parent="."]
+position = Vector2(908, 1129)

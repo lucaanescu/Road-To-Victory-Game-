@@ -251,6 +251,9 @@ Narator: In any case, you need to...
 		Aki (Yuki_Happy): Alright, seya at the car slowpoke!
 		leave Aki
 		Sunny: Huh, that was kind of an impresive catch, nice one me!
+		Narator: Flexibility Increased by 1!
+		set {Flexibility} += 1
+		[signal arg="Changed_attribute"]
 	elif {Flexibility_result} < 10:
 		update Sunny (Sunny_Sad)
 		Narator: Flexibility Fail...
@@ -288,6 +291,9 @@ Narator: In any case, you need to...
 		Sunny: Uh n-not, really-
 		Aki: Anyways, see you at the car "Ms wall".
 		leave Aki
+		Narator: Endurance increased by 1!
+		set {Endurance} += 1
+		[signal arg="Changed_attribute"]
 	elif {Endurance_result} < 10:
 		Narator: Endurance Fail...
 		Narator: The Keys hit you, and it hurt.
@@ -319,13 +325,16 @@ Narator: In any case, you need to...
 		update Reina (Reina_mad)
 		Reina: Next time you call me I hope it's more serious than some keys.
 		update Sunny (Sunny_default)
-		Sunny: But Rei, those were super strong keys! they might have threatened my life! 
+		Sunny: But Rei, those were super strong keys! they might have threatened my life!
 		leave Aki
 		update Reina (Reina_confused)
 		Reina: Hah, very funny. (Unless these are tungsten keys... no)
 		update Reina (Reina_Normal)
 		Reina: See you at the car.
 		leave Reina
+		Narator: Charm increased by 1!
+		set {Charm} += 1
+		[signal arg="Changed_attribute"]
 	elif {Charm_result} < 10:
 		Narator: Charm Fail...
 		Narator: You call for Reina's help but it seems she wasnt paying any attention to you.
