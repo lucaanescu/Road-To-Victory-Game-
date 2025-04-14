@@ -1,15 +1,23 @@
-[gd_scene load_steps=3 format=3 uid="uid://ckwveuw58rpgb"]
+[gd_scene load_steps=2 format=3 uid="uid://ckwveuw58rpgb"]
 
-[ext_resource type="Script" path="res://Scripts/Car_script.gd" id="1_1s5lm"]
 [ext_resource type="Texture2D" uid="uid://b6u6x20gn016w" path="res://Backgrounds/5818194.png" id="2_t77go"]
 
-[node name="Car_overworld" type="Node2D"]
-scale = Vector2(0.3, 0.3)
-script = ExtResource("1_1s5lm")
-
-[node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(0.5, 0.5)
+[node name="Car_overworld" type="Sprite2D"]
+position = Vector2(511.25, 301.25)
+scale = Vector2(0.1, 0.1)
 texture = ExtResource("2_t77go")
 
-[node name="Camera2D" type="Camera2D" parent="Sprite2D"]
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(-18.9635, 18.9627)
+zoom = Vector2(0.35, 0.35)
+limit_left = -15500000
+limit_top = -15500000
+limit_right = 15500000
+limit_bottom = 15500000
+limit_smoothed = true
 position_smoothing_enabled = true
+drag_horizontal_enabled = true
+drag_vertical_enabled = true
+drag_vertical_offset = -1.0
+drag_left_margin = 0.21
+drag_bottom_margin = 0.81
