@@ -48,7 +48,6 @@ scale = Vector2(2.176, 2.176)
 
 [node name="Start" type="Node2D" parent="EventHolderDay_1"]
 position = Vector2(745.404, 1016.08)
-scale = Vector2(1, 1)
 
 [node name="Event1" type="Node2D" parent="EventHolderDay_1"]
 position = Vector2(840.533, 834.559)
@@ -60,7 +59,6 @@ texture = ExtResource("2_6uouv")
 
 [node name="Event1-2" type="Node2D" parent="EventHolderDay_1"]
 position = Vector2(652.114, 824.449)
-scale = Vector2(1, 1)
 
 [node name="Sprite2D" type="Sprite2D" parent="EventHolderDay_1/Event1-2"]
 scale = Vector2(0.184095, 0.178342)
@@ -76,7 +74,6 @@ texture = ExtResource("2_6uouv")
 
 [node name="Event2-2" type="Node2D" parent="EventHolderDay_1"]
 position = Vector2(443.474, 458.18)
-scale = Vector2(1, 1)
 
 [node name="Sprite2D" type="Sprite2D" parent="EventHolderDay_1/Event2-2"]
 scale = Vector2(0.153724, 0.154822)
@@ -92,7 +89,6 @@ texture = ExtResource("2_6uouv")
 
 [node name="Event3-2" type="Node2D" parent="EventHolderDay_1"]
 position = Vector2(532.169, 235.754)
-scale = Vector2(1, 1)
 
 [node name="Sprite2D" type="Sprite2D" parent="EventHolderDay_1/Event3-2"]
 position = Vector2(-7.62939e-05, 7.15256e-06)
