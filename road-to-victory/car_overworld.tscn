@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://b6u6x20gn016w" path="res://Backgrounds/5818194.png" id="2_t77go"]
 
 [node name="Car_overworld" type="Sprite2D"]
-position = Vector2(511.25, 301.25)
+position = Vector2(-0.999998, -0.999998)
 scale = Vector2(0.1, 0.1)
 texture = ExtResource("2_t77go")
 
@@ -21,3 +21,5 @@ drag_vertical_enabled = true
 drag_vertical_offset = -1.0
 drag_left_margin = 0.21
 drag_bottom_margin = 0.81
+
+[node name="Timer" type="Timer" parent="."]

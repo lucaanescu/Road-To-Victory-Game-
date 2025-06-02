@@ -28,7 +28,6 @@ func _generate_map() -> Array[Array]:
 	
 	var i := 0
 	for floors in map_data:
-		print("floors %s: %s" % [i, floors])
 		i += 1
 	
 	return []
