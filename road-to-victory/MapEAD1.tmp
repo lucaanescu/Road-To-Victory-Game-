@@ -53,8 +53,6 @@ position = Vector2(745.404, 1016.08)
 position = Vector2(840.533, 834.559)
 
 [node name="Sprite2D" type="Sprite2D" parent="EventHolderDay_1/Event1"]
-light_mask = 3
-visibility_layer = 3
 position = Vector2(-6.48499e-05, 0)
 scale = Vector2(0.184095, 0.178342)
 texture = ExtResource("2_6uouv")
@@ -135,4 +133,4 @@ scale = Vector2(0.0242567, 0.0239825)
 texture = ExtResource("4_c420p")
 
 [node name="Car_overworld" parent="." instance=ExtResource("2_2apfl")]
-position = Vector2(655, 530)
+position = Vector2(564, 432)

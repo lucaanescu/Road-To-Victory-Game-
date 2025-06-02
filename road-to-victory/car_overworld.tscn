@@ -3,12 +3,11 @@
 [ext_resource type="Texture2D" uid="uid://b6u6x20gn016w" path="res://Backgrounds/5818194.png" id="2_t77go"]
 
 [node name="Car_overworld" type="Sprite2D"]
-position = Vector2(-0.999998, -0.999998)
 scale = Vector2(0.1, 0.1)
 texture = ExtResource("2_t77go")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(-18.9635, 18.9627)
+position = Vector2(-40, -10)
 zoom = Vector2(0.35, 0.35)
 limit_left = -15500000
 limit_top = -15500000
