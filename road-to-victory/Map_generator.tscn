@@ -42,6 +42,14 @@ scale = Vector2(2.176, 2.176)
 texture = ExtResource("1_2x31l")
 expand_mode = 3
 
+[node name="Night_Filter" type="ColorRect" parent="."]
+visible = false
+offset_left = -2840.0
+offset_top = -2828.0
+offset_right = 2857.0
+offset_bottom = 2030.0
+color = Color(0, 0.129412, 0.337255, 0.403922)
+
 [node name="EventHolderDay_1" type="Node2D" parent="."]
 position = Vector2(-1063, -1782)
 scale = Vector2(2.176, 2.176)
@@ -81,71 +89,128 @@ offset_right = 27.0
 offset_bottom = 28.0
 
 [node name="Event2" type="Node2D" parent="EventHolderDay_1"]
-position = Vector2(695.771, 391.544)
+position = Vector2(806.066, 518.382)
 
 [node name="Sprite2D" type="Sprite2D" parent="EventHolderDay_1/Event2"]
-position = Vector2(-1.23418e-06, 2.50936e-05)
+position = Vector2(-5.53131e-05, 1.33514e-05)
 scale = Vector2(0.153724, 0.154822)
 texture = ExtResource("2_6uouv")
 
 [node name="Button" type="Button" parent="EventHolderDay_1/Event2/Sprite2D"]
-offset_right = 8.0
-offset_bottom = 8.0
+modulate = Color(1, 1, 1, 0)
+offset_left = -26.9055
+offset_top = -26.7146
+offset_right = 27.0945
+offset_bottom = 27.2854
 
 [node name="Event2_2" type="Node2D" parent="EventHolderDay_1"]
-position = Vector2(443.474, 458.18)
+position = Vector2(504.596, 517.004)
 
 [node name="Sprite2D" type="Sprite2D" parent="EventHolderDay_1/Event2_2"]
+position = Vector2(7.62939e-06, 5.34058e-05)
 scale = Vector2(0.153724, 0.154822)
 texture = ExtResource("2_6uouv")
 
 [node name="Button" type="Button" parent="EventHolderDay_1/Event2_2/Sprite2D"]
-offset_right = 8.0
-offset_bottom = 8.0
+modulate = Color(1, 1, 1, 0)
+offset_left = -27.0
+offset_top = -27.0
+offset_right = 27.0
+offset_bottom = 26.0
 
 [node name="Event3" type="Node2D" parent="EventHolderDay_1"]
-position = Vector2(295.037, 231.158)
+position = Vector2(405.331, 240.349)
 
 [node name="Sprite2D" type="Sprite2D" parent="EventHolderDay_1/Event3"]
-position = Vector2(-5.16106e-06, 6.67572e-06)
+position = Vector2(-1.52588e-05, 6.67572e-06)
 scale = Vector2(0.167956, 0.167682)
 texture = ExtResource("2_6uouv")
 
 [node name="Button" type="Button" parent="EventHolderDay_1/Event3/Sprite2D"]
-offset_right = 8.0
-offset_bottom = 8.0
+modulate = Color(1, 1, 1, 0)
+offset_left = -27.0
+offset_top = -27.0
+offset_right = 27.0
+offset_bottom = 27.0
 
-[node name="Event3-2" type="Node2D" parent="EventHolderDay_1"]
+[node name="Event3_2" type="Node2D" parent="EventHolderDay_1"]
 position = Vector2(532.169, 235.754)
 
-[node name="Sprite2D" type="Sprite2D" parent="EventHolderDay_1/Event3-2"]
+[node name="Sprite2D" type="Sprite2D" parent="EventHolderDay_1/Event3_2"]
 position = Vector2(-7.62939e-05, 7.15256e-06)
 scale = Vector2(0.167956, 0.167682)
 texture = ExtResource("2_6uouv")
 
-[node name="Button" type="Button" parent="EventHolderDay_1/Event3-2/Sprite2D"]
-offset_right = 8.0
-offset_bottom = 8.0
+[node name="Button" type="Button" parent="EventHolderDay_1/Event3_2/Sprite2D"]
+modulate = Color(1, 1, 1, 0)
+offset_left = -27.0
+offset_top = -27.0
+offset_right = 27.0
+offset_bottom = 27.0
 
 [node name="EventHolderNight_1" type="Node2D" parent="."]
 position = Vector2(-1063, -1782)
 scale = Vector2(2.176, 2.176)
 
 [node name="Event1" type="Node2D" parent="EventHolderNight_1"]
-position = Vector2(784.467, 585.937)
+position = Vector2(810.662, 678.309)
 
 [node name="Sprite2D" type="Sprite2D" parent="EventHolderNight_1/Event1"]
-position = Vector2(0, 4.57764e-05)
+position = Vector2(0, -7.62939e-06)
 scale = Vector2(0.0467192, 0.046063)
 texture = ExtResource("3_pj25s")
 
+[node name="Button" type="Button" parent="EventHolderNight_1/Event1/Sprite2D"]
+modulate = Color(1, 1, 1, 0)
+offset_left = -98.0
+offset_top = -100.0
+offset_right = 98.0
+offset_bottom = 100.0
+
+[node name="Event1_2" type="Node2D" parent="EventHolderNight_1"]
+position = Vector2(603.86, 663.143)
+
+[node name="Sprite2D" type="Sprite2D" parent="EventHolderNight_1/Event1_2"]
+position = Vector2(6.10352e-05, 6.29425e-05)
+scale = Vector2(0.0467192, 0.046063)
+texture = ExtResource("3_pj25s")
+
+[node name="Button" type="Button" parent="EventHolderNight_1/Event1_2/Sprite2D"]
+modulate = Color(1, 1, 1, 0)
+offset_left = -98.3667
+offset_top = -99.7674
+offset_right = 97.6333
+offset_bottom = 100.233
+
 [node name="Event2" type="Node2D" parent="EventHolderNight_1"]
-position = Vector2(536.764, 313.878)
+position = Vector2(587.776, 353.401)
 
 [node name="Sprite2D" type="Sprite2D" parent="EventHolderNight_1/Event2"]
-position = Vector2(5.62948e-05, 9.53674e-06)
+position = Vector2(0, 3.70145e-05)
 scale = Vector2(0.0554989, 0.0537108)
 texture = ExtResource("3_pj25s")
+
+[node name="Button" type="Button" parent="EventHolderNight_1/Event2/Sprite2D"]
+modulate = Color(1, 1, 1, 0)
+offset_left = -99.0
+offset_top = -103.0
+offset_right = 99.0
+offset_bottom = 103.0
+
+[node name="Event2_2" type="Node2D" parent="EventHolderNight_1"]
+position = Vector2(527.573, 442.555)
+
+[node name="Sprite2D" type="Sprite2D" parent="EventHolderNight_1/Event2_2"]
+position = Vector2(0, 9.05991e-06)
+scale = Vector2(0.0554989, 0.0537108)
+texture = ExtResource("3_pj25s")
+
+[node name="Button" type="Button" parent="EventHolderNight_1/Event2_2/Sprite2D"]
+modulate = Color(1, 1, 1, 0)
+offset_left = -99.366
+offset_top = -102.674
+offset_right = 98.634
+offset_bottom = 103.326
 
 [node name="Event3" type="Node2D" parent="EventHolderNight_1"]
 position = Vector2(252.298, 319.393)
@@ -155,14 +220,43 @@ position = Vector2(0.459579, -1.52588e-05)
 scale = Vector2(0.0467184, 0.0461699)
 texture = ExtResource("3_pj25s")
 
+[node name="Button" type="Button" parent="EventHolderNight_1/Event3/Sprite2D"]
+modulate = Color(1, 1, 1, 0)
+offset_left = -98.0
+offset_top = -100.0
+offset_right = 98.0
+offset_bottom = 100.0
+
+[node name="Event3_2" type="Node2D" parent="EventHolderNight_1"]
+position = Vector2(182.445, 277.114)
+
+[node name="Sprite2D" type="Sprite2D" parent="EventHolderNight_1/Event3_2"]
+position = Vector2(-7.86781e-06, -1.52588e-05)
+scale = Vector2(0.0467184, 0.0461699)
+texture = ExtResource("3_pj25s")
+
+[node name="Button" type="Button" parent="EventHolderNight_1/Event3_2/Sprite2D"]
+modulate = Color(1, 1, 1, 0)
+offset_left = -98.368
+offset_top = -99.537
+offset_right = 97.632
+offset_bottom = 100.463
+
 [node name="Final" type="Node2D" parent="."]
 position = Vector2(-523, -700)
 scale = Vector2(2.176, 2.176)
 
 [node name="Sprite2D" type="Sprite2D" parent="Final"]
-position = Vector2(3.05176e-05, 2.47955e-05)
-scale = Vector2(0.0242567, 0.0239825)
+position = Vector2(0.341849, 0.147167)
+scale = Vector2(0.0255919, 0.0245573)
 texture = ExtResource("4_c420p")
+
+[node name="Button" type="Button" parent="Final/Sprite2D"]
+modulate = Color(1, 1, 1, 0)
+offset_left = -210.0
+offset_top = -230.287
+offset_right = 184.0
+offset_bottom = 180.713
 
 [node name="Car_overworld" parent="." instance=ExtResource("2_2apfl")]
 position = Vector2(655, 530)
@@ -176,4 +270,16 @@ position = Vector2(655, 530)
 [connection signal="mouse_entered" from="EventHolderDay_1/Event2_2/Sprite2D/Button" to="." method="_on_button_mouse_entered"]
 [connection signal="mouse_exited" from="EventHolderDay_1/Event2_2/Sprite2D/Button" to="." method="_on_button_mouse_exited"]
 [connection signal="mouse_entered" from="EventHolderDay_1/Event3/Sprite2D/Button" to="." method="_on_button_mouse_entered"]
-[connection signal="mouse_entered" from="EventHolderDay_1/Event3-2/Sprite2D/Button" to="." method="_on_button_mouse_entered"]
+[connection signal="mouse_entered" from="EventHolderDay_1/Event3_2/Sprite2D/Button" to="." method="_on_button_mouse_entered"]
+[connection signal="mouse_entered" from="EventHolderNight_1/Event1/Sprite2D/Button" to="." method="_on_button_mouse_entered"]
+[connection signal="mouse_exited" from="EventHolderNight_1/Event1/Sprite2D/Button" to="." method="_on_button_mouse_exited"]
+[connection signal="mouse_entered" from="EventHolderNight_1/Event1_2/Sprite2D/Button" to="." method="_on_button_mouse_entered"]
+[connection signal="mouse_exited" from="EventHolderNight_1/Event1_2/Sprite2D/Button" to="." method="_on_button_mouse_exited"]
+[connection signal="mouse_entered" from="EventHolderNight_1/Event2/Sprite2D/Button" to="." method="_on_button_mouse_entered"]
+[connection signal="mouse_exited" from="EventHolderNight_1/Event2/Sprite2D/Button" to="." method="_on_button_mouse_exited"]
+[connection signal="mouse_entered" from="EventHolderNight_1/Event2_2/Sprite2D/Button" to="." method="_on_button_mouse_entered"]
+[connection signal="mouse_exited" from="EventHolderNight_1/Event2_2/Sprite2D/Button" to="." method="_on_button_mouse_exited"]
+[connection signal="mouse_entered" from="EventHolderNight_1/Event3/Sprite2D/Button" to="." method="_on_button_mouse_entered"]
+[connection signal="mouse_exited" from="EventHolderNight_1/Event3/Sprite2D/Button" to="." method="_on_button_mouse_exited"]
+[connection signal="mouse_entered" from="EventHolderNight_1/Event3_2/Sprite2D/Button" to="." method="_on_button_mouse_entered"]
+[connection signal="mouse_exited" from="EventHolderNight_1/Event3_2/Sprite2D/Button" to="." method="_on_button_mouse_exited"]
