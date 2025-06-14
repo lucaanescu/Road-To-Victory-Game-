@@ -5,6 +5,9 @@ var Click_event : InputEventMouseButton
 var tween : Tween = null
 var Day_cycle = true
 var can_click = true
+var Day_one = true
+var Day_two = false
+var Day_three = false
 var Final_day = false
 var mouse_position = null
 var current_mouse_pos = null
@@ -33,6 +36,8 @@ func _input(event: InputEvent) -> void:
 #just day and final event here
 		
 		if Day_cycle == true:
+			$EventHolderNight_1.visible = false
+			
 			if event.is_action_pressed("click") && Location_Day_1 == true:
 				tween = create_tween()
 				current_mouse_pos = $EventHolderDay_1/Event1/Sprite2D.get_global_mouse_position()
@@ -99,6 +104,8 @@ func _input(event: InputEvent) -> void:
 #Splits the events which you can travel to either day events or night events.
 			
 		if Day_cycle == false:
+			
+			
 			if event.is_action_pressed("click") && Location_Night_1 == true:
 				tween = create_tween()
 				current_mouse_pos = $EventHolderNight_1/Event1/Sprite2D.get_global_mouse_position()
@@ -136,6 +143,8 @@ func _input(event: InputEvent) -> void:
 				Day_cycle = true
 				
 			elif event.is_action_pressed("click") && Location_Night_3 == true:
+				Final_day = true
+				print("Final day call here")
 				tween = create_tween()
 				current_mouse_pos = $EventHolderNight_1/Event3/Sprite2D.get_global_mouse_position()
 				tween.tween_property($Car_overworld,"position",current_mouse_pos,5)
@@ -145,6 +154,8 @@ func _input(event: InputEvent) -> void:
 				Day_cycle = true
 				
 			elif event.is_action_pressed("click") && Location_Night_3_2 == true:
+				Final_day = true
+				print("Final day call here")
 				tween = create_tween()
 				current_mouse_pos = $EventHolderNight_1/Event3_2/Sprite2D.get_global_mouse_position()
 				tween.tween_property($Car_overworld,"position",current_mouse_pos,5)
@@ -152,27 +163,39 @@ func _input(event: InputEvent) -> void:
 				$Car_overworld/Travel.play()
 				tween.finished.connect(_allow_click)
 				Day_cycle = true
+				
+		elif Final_day == true:
+			$Final.visible = true
 	
 #Function that checks if the player is alowed to click again and sets the time to day or night
 func _allow_click():
+	
 	can_click = true
 	if Day_cycle == false:
 		$Night_Filter.visible = true
+		$EventHolderNight_1.visible = true
+		$EventHolderDay_1.visible = false
+		
 	elif Day_cycle == true:
 		$Night_Filter.visible = false
-	
+		$EventHolderNight_1.visible = false
+		$EventHolderDay_1.visible = true
+
 #Functions that signal if the mouse is the location and if the mouse exited
 func _on_button_mouse_entered() -> void:
 	if Day_cycle == true:
 		
-		Location_Day_1 = true
-		Location_Day_1_2 = true
-		Location_Day_2 = true
-		Location_Day_2_2 = true
-		Location_Day_3 = true
-		Location_Day_3_2 = true
+		if Day_one == true:
+			Location_Day_1 = true
+			Location_Day_1_2 = true
+		if Day_two == true:
+			Location_Day_2 = true
+			Location_Day_2_2 = true
+		if Day_three == true:
+			Location_Day_3 = true
+			Location_Day_3_2 = true
 		
-	elif Day_cycle == false: 
+	if Day_cycle == false: 
 		
 		Location_Night_1 = true
 		Location_Night_1_2 = true
@@ -181,6 +204,7 @@ func _on_button_mouse_entered() -> void:
 		Location_Night_3 = true
 		Location_Night_3_2 = true
 		Location_final = true
+		
 	
 func _on_button_mouse_exited() -> void:
 		
