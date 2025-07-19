@@ -228,7 +228,7 @@ offset_right = 97.6326
 offset_bottom = 100.464
 
 [node name="Event3_2" type="Node2D" parent="EventHolderNight_1"]
-position = Vector2(226.103, 231.158)
+position = Vector2(303.328, 157.483)
 
 [node name="Sprite2D" type="Sprite2D" parent="EventHolderNight_1/Event3_2"]
 position = Vector2(2.09808e-05, 4.1008e-05)
@@ -243,7 +243,6 @@ offset_right = 97.6323
 offset_bottom = 100.463
 
 [node name="Final" type="Node2D" parent="."]
-visible = false
 position = Vector2(-543, -807)
 scale = Vector2(2.176, 2.176)
 
@@ -254,10 +253,10 @@ texture = ExtResource("4_c420p")
 
 [node name="Button" type="Button" parent="Final/Sprite2D"]
 modulate = Color(1, 1, 1, 0)
-offset_left = -215.486
-offset_top = -224.564
-offset_right = 178.514
-offset_bottom = 186.436
+offset_left = -215.0
+offset_top = -225.0
+offset_right = 198.0
+offset_bottom = 224.0
 
 [node name="Car_overworld" parent="." instance=ExtResource("2_2apfl")]
 position = Vector2(655, 530)
