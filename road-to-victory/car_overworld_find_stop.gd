@@ -8,6 +8,9 @@ var can_click = true
 var Day_one = true
 var Day_two = false
 var Day_three = false
+var Night_one = false
+var Night_two = false
+var Night_three = false
 var Final_day = false
 var mouse_position = null
 var current_mouse_pos = null
@@ -46,6 +49,9 @@ func _input(event: InputEvent) -> void:
 				$Car_overworld/Travel.play()
 				tween.finished.connect(_allow_click)
 				Day_cycle = false
+				Night_one = true
+				Day_two = false
+				Day_three = false
 				
 			elif event.is_action_pressed("click") && Location_Day_1_2 == true:
 				tween = create_tween()
@@ -55,6 +61,9 @@ func _input(event: InputEvent) -> void:
 				$Car_overworld/Travel.play()
 				tween.finished.connect(_allow_click)
 				Day_cycle = false
+				Night_one = true
+				Day_two = false
+				Day_three = false
 				
 			elif event.is_action_pressed("click") && Location_Day_2 == true:
 				tween = create_tween()
@@ -64,6 +73,11 @@ func _input(event: InputEvent) -> void:
 				$Car_overworld/Travel.play()
 				tween.finished.connect(_allow_click)
 				Day_cycle = false
+				Day_one = false
+				Day_two = true
+				Day_three = false
+				Night_one = false
+				Night_two = true
 				
 			elif event.is_action_pressed("click") && Location_Day_2_2 == true:
 				tween = create_tween()
@@ -73,6 +87,11 @@ func _input(event: InputEvent) -> void:
 				$Car_overworld/Travel.play()
 				tween.finished.connect(_allow_click)
 				Day_cycle = false
+				Day_one = false
+				Day_two = true
+				Day_three = false
+				Night_one = false
+				Night_two = true
 				
 			elif event.is_action_pressed("click") && Location_Day_3 == true:
 				tween = create_tween()
@@ -82,6 +101,9 @@ func _input(event: InputEvent) -> void:
 				$Car_overworld/Travel.play()
 				tween.finished.connect(_allow_click)
 				Day_cycle = false
+				Night_one = false
+				Night_two = false
+				Night_three = true
 				
 			elif event.is_action_pressed("click") && Location_Day_3_2 == true:
 				tween = create_tween()
@@ -91,6 +113,9 @@ func _input(event: InputEvent) -> void:
 				$Car_overworld/Travel.play()
 				tween.finished.connect(_allow_click)
 				Day_cycle = false
+				Night_one = false
+				Night_two = false
+				Night_three = true
 				
 #The final check point
 			elif event.is_action_pressed("click") && Location_final == true:
@@ -114,6 +139,9 @@ func _input(event: InputEvent) -> void:
 				$Car_overworld/Travel.play()
 				tween.finished.connect(_allow_click)
 				Day_cycle = true
+				Day_one = false
+				Day_two = true
+				Day_three = false
 
 			elif event.is_action_pressed("click") && Location_Night_1_2 == true:
 				tween = create_tween()
@@ -123,6 +151,9 @@ func _input(event: InputEvent) -> void:
 				$Car_overworld/Travel.play()
 				tween.finished.connect(_allow_click)
 				Day_cycle = true
+				Day_one = false
+				Day_two = true
+				Day_three = false
 				
 			elif event.is_action_pressed("click") && Location_Night_2 == true:
 				tween = create_tween()
@@ -132,6 +163,7 @@ func _input(event: InputEvent) -> void:
 				$Car_overworld/Travel.play()
 				tween.finished.connect(_allow_click)
 				Day_cycle = true
+#needs to have its logic checked
 				
 			elif event.is_action_pressed("click") && Location_Night_2_2 == true:
 				tween = create_tween()
@@ -188,21 +220,69 @@ func _on_button_mouse_entered() -> void:
 		if Day_one == true:
 			Location_Day_1 = true
 			Location_Day_1_2 = true
+			$EventHolderDay_1/Event1.visible = true
+			$EventHolderDay_1/Event1_2.visible = true
+			$EventHolderDay_1/Event2_2.visible = false
+			$EventHolderDay_1/Event2.visible = false
+			$EventHolderDay_1/Event3.visible = false
+			$EventHolderDay_1/Event3_2.visible = false
 		if Day_two == true:
 			Location_Day_2 = true
 			Location_Day_2_2 = true
+			$EventHolderDay_1/Event1_2.visible = false
+			$EventHolderDay_1/Event1.visible = false
+			$EventHolderDay_1/Event2.visible = true
+			$EventHolderDay_1/Event2_2.visible = true
+			$EventHolderNight_1/Event1.visible = false
+			$EventHolderNight_1/Event1_2.visible = false
+			$EventHolderDay_1/Event3.visible = false
+			$EventHolderDay_1/Event3_2.visible = false
 		if Day_three == true:
 			Location_Day_3 = true
 			Location_Day_3_2 = true
+			$EventHolderDay_1/Event1_2.visible = false
+			$EventHolderDay_1/Event1.visible = false
+			$EventHolderDay_1/Event3.visible = true
+			$EventHolderDay_1/Event3_2.visible = true
+			$EventHolderDay_1/Event2.visible = false
+			$EventHolderDay_1/Event2_2.visible = false
 		
 	if Day_cycle == false: 
 		
-		Location_Night_1 = true
-		Location_Night_1_2 = true
-		Location_Night_2 = true
-		Location_Night_2_2 = true
-		Location_Night_3 = true
-		Location_Night_3_2 = true
+		if Night_one == true:
+			Location_Night_1 = true
+			Location_Night_1_2 = true
+			$EventHolderDay_1/Event1.visible = false
+			$EventHolderDay_1/Event1_2.visible = false
+			$EventHolderNight_1/Event1_2.visible = true
+			$EventHolderNight_1/Event1.visible = true
+			$EventHolderNight_1/Event2.visible = false
+			$EventHolderNight_1/Event2_2.visible = false
+			$EventHolderDay_1/Event2.visible = true
+			$EventHolderDay_1/Event2_2.visible = true
+			$EventHolderNight_1/Event3_2.visible = false
+			$EventHolderNight_1/Event3.visible = false
+		
+		if Night_two == true:
+			Location_Night_2 = true
+			Location_Night_2_2 = true
+			$EventHolderNight_1/Event1_2.visible = false
+			$EventHolderNight_1/Event1.visible = false
+			$EventHolderNight_1/Event2.visible = true
+			$EventHolderNight_1/Event2_2.visible = true
+			$EventHolderNight_1/Event3_2.visible = false
+			$EventHolderNight_1/Event3.visible = false
+		
+		if Night_three == true:
+			Location_Night_3 = true
+			Location_Night_3_2 = true
+			$EventHolderNight_1/Event1_2.visible = false
+			$EventHolderNight_1/Event1.visible = false
+			$EventHolderNight_1/Event2.visible = false
+			$EventHolderNight_1/Event2_2.visible = false
+			$EventHolderNight_1/Event3_2.visible = true
+			$EventHolderNight_1/Event3.visible = true
+			
 		Location_final = true
 		
 	

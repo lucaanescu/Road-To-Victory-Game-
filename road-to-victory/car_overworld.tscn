@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://ckwveuw58rpgb"]
 
-[ext_resource type="AudioStream" uid="uid://cag1a5jac1q8u" path="res://Traveling.mp3" id="2_260at"]
+[ext_resource type="AudioStream" uid="uid://bm3j4giaces2x" path="res://Traveling.mp3" id="2_260at"]
 [ext_resource type="Texture2D" uid="uid://b6u6x20gn016w" path="res://Backgrounds/5818194.png" id="2_t77go"]
 
 [node name="Car_overworld" type="Sprite2D"]
@@ -23,7 +23,6 @@ drag_left_margin = 0.21
 drag_bottom_margin = 0.81
 
 [node name="Travel" type="AudioStreamPlayer2D" parent="."]
-scale = Vector2(1, 1)
 stream = ExtResource("2_260at")
 volume_db = -3.105
 

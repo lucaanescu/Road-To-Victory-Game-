@@ -1,0 +1,290 @@
+[gd_scene load_steps=7 format=3 uid="uid://i543618oy47f"]
+
+[ext_resource type="Texture2D" uid="uid://cpkwgbsrs3rhd" path="res://Backgrounds/SanJulioMap.webp" id="1_2x31l"]
+[ext_resource type="Script" path="res://car_overworld_find_stop.gd" id="1_ss2up"]
+[ext_resource type="PackedScene" uid="uid://ckwveuw58rpgb" path="res://car_overworld.tscn" id="2_2apfl"]
+[ext_resource type="Texture2D" uid="uid://bw5121a0m8wcd" path="res://Backgrounds/Layer.png" id="2_6uouv"]
+[ext_resource type="Texture2D" uid="uid://bsw8kgq6755bk" path="res://Backgrounds/blue-round-background-for-text-create-posts-stories-headlines-transparent-clipart-free-png.png" id="3_pj25s"]
+[ext_resource type="Texture2D" uid="uid://ba5e55kggm058" path="res://Backgrounds/1_nZ9VwHTLxAfNCuCjYAkajg.png" id="4_c420p"]
+
+[node name="World_generation" type="Node2D"]
+script = ExtResource("1_ss2up")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -2840.0
+offset_top = -2828.0
+offset_right = 2857.0
+offset_bottom = 2030.0
+color = Color(0, 0.623529, 0.839216, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+offset_left = 844.0
+offset_top = -4118.0
+offset_right = 2859.0
+offset_bottom = 740.0
+color = Color(0.964706, 0.882353, 0.572549, 1)
+
+[node name="ColorRect3" type="ColorRect" parent="."]
+offset_left = 654.0
+offset_top = 740.0
+offset_right = 2859.0
+offset_bottom = 2024.0
+color = Color(0.4, 0.729412, 0.843137, 1)
+
+[node name="SanJulioMap" type="TextureRect" parent="."]
+light_mask = 3
+visibility_layer = 3
+offset_left = -1063.0
+offset_top = -1782.0
+offset_right = 35.0
+offset_bottom = -598.0
+scale = Vector2(2.176, 2.176)
+texture = ExtResource("1_2x31l")
+expand_mode = 3
+
+[node name="Night_Filter" type="ColorRect" parent="."]
+visible = false
+offset_left = -2840.0
+offset_top = -2828.0
+offset_right = 2857.0
+offset_bottom = 2030.0
+color = Color(0, 0.129412, 0.337255, 0.403922)
+
+[node name="EventHolderDay_1" type="Node2D" parent="."]
+position = Vector2(-1063, -1782)
+scale = Vector2(2.176, 2.176)
+
+[node name="Start" type="Node2D" parent="EventHolderDay_1"]
+position = Vector2(745.404, 1016.08)
+
+[node name="Event1" type="Node2D" parent="EventHolderDay_1"]
+position = Vector2(840.533, 834.559)
+
+[node name="Sprite2D" type="Sprite2D" parent="EventHolderDay_1/Event1"]
+light_mask = 3
+visibility_layer = 3
+position = Vector2(-6.48499e-05, 0)
+scale = Vector2(0.184095, 0.178342)
+texture = ExtResource("2_6uouv")
+
+[node name="Button" type="Button" parent="EventHolderDay_1/Event1/Sprite2D"]
+modulate = Color(1, 1, 1, 0)
+offset_left = -27.0
+offset_top = -28.0
+offset_right = 27.0
+offset_bottom = 28.0
+
+[node name="Event1_2" type="Node2D" parent="EventHolderDay_1"]
+position = Vector2(652.114, 824.449)
+
+[node name="Sprite2D" type="Sprite2D" parent="EventHolderDay_1/Event1_2"]
+scale = Vector2(0.184095, 0.178342)
+texture = ExtResource("2_6uouv")
+
+[node name="Button" type="Button" parent="EventHolderDay_1/Event1_2/Sprite2D"]
+modulate = Color(1, 1, 1, 0)
+offset_left = -27.0
+offset_top = -28.0
+offset_right = 27.0
+offset_bottom = 28.0
+
+[node name="Event2" type="Node2D" parent="EventHolderDay_1"]
+position = Vector2(806.066, 518.382)
+
+[node name="Sprite2D" type="Sprite2D" parent="EventHolderDay_1/Event2"]
+position = Vector2(-5.53131e-05, 1.33514e-05)
+scale = Vector2(0.153724, 0.154822)
+texture = ExtResource("2_6uouv")
+
+[node name="Button" type="Button" parent="EventHolderDay_1/Event2/Sprite2D"]
+modulate = Color(1, 1, 1, 0)
+offset_left = -26.9055
+offset_top = -26.7146
+offset_right = 27.0945
+offset_bottom = 27.2854
+
+[node name="Event2_2" type="Node2D" parent="EventHolderDay_1"]
+position = Vector2(504.596, 517.004)
+
+[node name="Sprite2D" type="Sprite2D" parent="EventHolderDay_1/Event2_2"]
+position = Vector2(7.62939e-06, 5.34058e-05)
+scale = Vector2(0.153724, 0.154822)
+texture = ExtResource("2_6uouv")
+
+[node name="Button" type="Button" parent="EventHolderDay_1/Event2_2/Sprite2D"]
+modulate = Color(1, 1, 1, 0)
+offset_left = -27.0
+offset_top = -27.0
+offset_right = 27.0
+offset_bottom = 26.0
+
+[node name="Event3" type="Node2D" parent="EventHolderDay_1"]
+position = Vector2(540.441, 307.904)
+
+[node name="Sprite2D" type="Sprite2D" parent="EventHolderDay_1/Event3"]
+position = Vector2(-1.90735e-06, 7.62939e-06)
+scale = Vector2(0.167956, 0.167682)
+texture = ExtResource("2_6uouv")
+
+[node name="Button" type="Button" parent="EventHolderDay_1/Event3/Sprite2D"]
+modulate = Color(1, 1, 1, 0)
+offset_left = -27.3618
+offset_top = -27.4065
+offset_right = 26.6382
+offset_bottom = 26.5935
+
+[node name="Event3_2" type="Node2D" parent="EventHolderDay_1"]
+position = Vector2(532.169, 235.754)
+
+[node name="Sprite2D" type="Sprite2D" parent="EventHolderDay_1/Event3_2"]
+position = Vector2(-7.62939e-05, 7.15256e-06)
+scale = Vector2(0.167956, 0.167682)
+texture = ExtResource("2_6uouv")
+
+[node name="Button" type="Button" parent="EventHolderDay_1/Event3_2/Sprite2D"]
+modulate = Color(1, 1, 1, 0)
+offset_left = -27.0
+offset_top = -27.0
+offset_right = 27.0
+offset_bottom = 27.0
+
+[node name="EventHolderNight_1" type="Node2D" parent="."]
+position = Vector2(-1063, -1782)
+scale = Vector2(2.176, 2.176)
+
+[node name="Event1" type="Node2D" parent="EventHolderNight_1"]
+position = Vector2(810.662, 678.309)
+
+[node name="Sprite2D" type="Sprite2D" parent="EventHolderNight_1/Event1"]
+position = Vector2(0, -7.62939e-06)
+scale = Vector2(0.0467192, 0.046063)
+texture = ExtResource("3_pj25s")
+
+[node name="Button" type="Button" parent="EventHolderNight_1/Event1/Sprite2D"]
+modulate = Color(1, 1, 1, 0)
+offset_left = -98.0
+offset_top = -100.0
+offset_right = 98.0
+offset_bottom = 100.0
+
+[node name="Event1_2" type="Node2D" parent="EventHolderNight_1"]
+position = Vector2(603.86, 663.143)
+
+[node name="Sprite2D" type="Sprite2D" parent="EventHolderNight_1/Event1_2"]
+position = Vector2(6.10352e-05, 6.29425e-05)
+scale = Vector2(0.0467192, 0.046063)
+texture = ExtResource("3_pj25s")
+
+[node name="Button" type="Button" parent="EventHolderNight_1/Event1_2/Sprite2D"]
+modulate = Color(1, 1, 1, 0)
+offset_left = -98.3667
+offset_top = -99.7674
+offset_right = 97.6333
+offset_bottom = 100.233
+
+[node name="Event2" type="Node2D" parent="EventHolderNight_1"]
+position = Vector2(587.776, 353.401)
+
+[node name="Sprite2D" type="Sprite2D" parent="EventHolderNight_1/Event2"]
+position = Vector2(0, 3.70145e-05)
+scale = Vector2(0.0554989, 0.0537108)
+texture = ExtResource("3_pj25s")
+
+[node name="Button" type="Button" parent="EventHolderNight_1/Event2/Sprite2D"]
+modulate = Color(1, 1, 1, 0)
+offset_left = -99.0
+offset_top = -103.0
+offset_right = 99.0
+offset_bottom = 103.0
+
+[node name="Event2_2" type="Node2D" parent="EventHolderNight_1"]
+position = Vector2(527.573, 442.555)
+
+[node name="Sprite2D" type="Sprite2D" parent="EventHolderNight_1/Event2_2"]
+position = Vector2(0, 9.05991e-06)
+scale = Vector2(0.0554989, 0.0537108)
+texture = ExtResource("3_pj25s")
+
+[node name="Button" type="Button" parent="EventHolderNight_1/Event2_2/Sprite2D"]
+modulate = Color(1, 1, 1, 0)
+offset_left = -99.366
+offset_top = -102.674
+offset_right = 98.634
+offset_bottom = 103.326
+
+[node name="Event3" type="Node2D" parent="EventHolderNight_1"]
+position = Vector2(307.445, 247.243)
+
+[node name="Sprite2D" type="Sprite2D" parent="EventHolderNight_1/Event3"]
+position = Vector2(-7.62939e-06, -1.52588e-05)
+scale = Vector2(0.0467184, 0.0461699)
+texture = ExtResource("3_pj25s")
+
+[node name="Button" type="Button" parent="EventHolderNight_1/Event3/Sprite2D"]
+modulate = Color(1, 1, 1, 0)
+offset_left = -98.3674
+offset_top = -99.5359
+offset_right = 97.6326
+offset_bottom = 100.464
+
+[node name="Event3_2" type="Node2D" parent="EventHolderNight_1"]
+position = Vector2(226.103, 231.158)
+
+[node name="Sprite2D" type="Sprite2D" parent="EventHolderNight_1/Event3_2"]
+position = Vector2(2.09808e-05, 4.1008e-05)
+scale = Vector2(0.0467184, 0.0461699)
+texture = ExtResource("3_pj25s")
+
+[node name="Button" type="Button" parent="EventHolderNight_1/Event3_2/Sprite2D"]
+modulate = Color(1, 1, 1, 0)
+offset_left = -98.3677
+offset_top = -99.537
+offset_right = 97.6323
+offset_bottom = 100.463
+
+[node name="Final" type="Node2D" parent="."]
+visible = false
+position = Vector2(-543, -807)
+scale = Vector2(2.176, 2.176)
+
+[node name="Sprite2D" type="Sprite2D" parent="Final"]
+position = Vector2(-1.90735e-06, -7.62939e-06)
+scale = Vector2(0.0255919, 0.0245573)
+texture = ExtResource("4_c420p")
+
+[node name="Button" type="Button" parent="Final/Sprite2D"]
+modulate = Color(1, 1, 1, 0)
+offset_left = -215.486
+offset_top = -224.564
+offset_right = 178.514
+offset_bottom = 186.436
+
+[node name="Car_overworld" parent="." instance=ExtResource("2_2apfl")]
+position = Vector2(655, 530)
+
+[connection signal="mouse_entered" from="EventHolderDay_1/Event1/Sprite2D/Button" to="." method="_on_button_mouse_entered"]
+[connection signal="mouse_exited" from="EventHolderDay_1/Event1/Sprite2D/Button" to="." method="_on_button_mouse_exited"]
+[connection signal="mouse_entered" from="EventHolderDay_1/Event1_2/Sprite2D/Button" to="." method="_on_button_mouse_entered"]
+[connection signal="mouse_exited" from="EventHolderDay_1/Event1_2/Sprite2D/Button" to="." method="_on_button_mouse_exited"]
+[connection signal="mouse_entered" from="EventHolderDay_1/Event2/Sprite2D/Button" to="." method="_on_button_mouse_entered"]
+[connection signal="mouse_exited" from="EventHolderDay_1/Event2/Sprite2D/Button" to="." method="_on_button_mouse_exited"]
+[connection signal="mouse_entered" from="EventHolderDay_1/Event2_2/Sprite2D/Button" to="." method="_on_button_mouse_entered"]
+[connection signal="mouse_exited" from="EventHolderDay_1/Event2_2/Sprite2D/Button" to="." method="_on_button_mouse_exited"]
+[connection signal="mouse_entered" from="EventHolderDay_1/Event3/Sprite2D/Button" to="." method="_on_button_mouse_entered"]
+[connection signal="mouse_exited" from="EventHolderDay_1/Event3/Sprite2D/Button" to="." method="_on_button_mouse_exited"]
+[connection signal="mouse_entered" from="EventHolderDay_1/Event3_2/Sprite2D/Button" to="." method="_on_button_mouse_entered"]
+[connection signal="mouse_exited" from="EventHolderDay_1/Event3_2/Sprite2D/Button" to="." method="_on_button_mouse_exited"]
+[connection signal="mouse_entered" from="EventHolderNight_1/Event1/Sprite2D/Button" to="." method="_on_button_mouse_entered"]
+[connection signal="mouse_exited" from="EventHolderNight_1/Event1/Sprite2D/Button" to="." method="_on_button_mouse_exited"]
+[connection signal="mouse_entered" from="EventHolderNight_1/Event1_2/Sprite2D/Button" to="." method="_on_button_mouse_entered"]
+[connection signal="mouse_exited" from="EventHolderNight_1/Event1_2/Sprite2D/Button" to="." method="_on_button_mouse_exited"]
+[connection signal="mouse_entered" from="EventHolderNight_1/Event2/Sprite2D/Button" to="." method="_on_button_mouse_entered"]
+[connection signal="mouse_exited" from="EventHolderNight_1/Event2/Sprite2D/Button" to="." method="_on_button_mouse_exited"]
+[connection signal="mouse_entered" from="EventHolderNight_1/Event2_2/Sprite2D/Button" to="." method="_on_button_mouse_entered"]
+[connection signal="mouse_exited" from="EventHolderNight_1/Event2_2/Sprite2D/Button" to="." method="_on_button_mouse_exited"]
+[connection signal="mouse_entered" from="EventHolderNight_1/Event3/Sprite2D/Button" to="." method="_on_button_mouse_entered"]
+[connection signal="mouse_exited" from="EventHolderNight_1/Event3/Sprite2D/Button" to="." method="_on_button_mouse_exited"]
+[connection signal="mouse_entered" from="EventHolderNight_1/Event3_2/Sprite2D/Button" to="." method="_on_button_mouse_entered"]
+[connection signal="mouse_exited" from="EventHolderNight_1/Event3_2/Sprite2D/Button" to="." method="_on_button_mouse_exited"]
+[connection signal="mouse_entered" from="Final/Sprite2D/Button" to="." method="_on_button_mouse_entered"]
+[connection signal="mouse_exited" from="Final/Sprite2D/Button" to="." method="_on_button_mouse_exited"]
